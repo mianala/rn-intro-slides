@@ -1047,7 +1047,19 @@ class: text-center
 </div>
 
 ---
-src: ./pages/part-2.md
+src: ./pages/2-pipeline.md
 ---
 
+
+---
+src: ./pages/3-prerequisite.md
+---
+
+
+---
+src: ./pages/4-code.md
+---
+
+---
+src: ./pages/4-2-terminal.md
 ---

@@ -1,5 +1,0 @@
----
-layout: center
----
-
-# II - Pipeline

@@ -117,7 +117,7 @@ All these doesn’t mean it’s so smooth that there’s no bug you can find tha
 
 ### II- The pipeline (what was that chart creator app?) → this to prezi?
 
-I you haven’t built an app from start to finish yet, here are the
+If you haven’t built an app from start to finish yet, here are the
 
 1.  **Ideation & Planning**
     1. Define the **problem** and target audience.
