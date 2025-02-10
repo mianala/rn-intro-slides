@@ -1050,16 +1050,42 @@ class: text-center
 src: ./pages/2-pipeline.md
 ---
 
-
 ---
 src: ./pages/3-prerequisite.md
 ---
-
 
 ---
 src: ./pages/4-code.md
 ---
 
 ---
-src: ./pages/4-2-terminal.md
+src: ./pages/42-terminal.md
+---
+
+---
+src: ./pages/43-ui-component.md
+---
+
+---
+src: ./pages/44-backend.md
+---
+
+---
+src: ./pages/45-text.md
+---
+
+---
+src: ./pages/5-publish.md
+---
+
+---
+src: ./pages/6-monetization.md
+---
+
+---
+src: ./pages/7-tips.md
+---
+
+---
+src: ./pages/8-conclusion.md
 ---

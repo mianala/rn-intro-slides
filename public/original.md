@@ -222,6 +222,7 @@ This is the bread and butter. From here on, you need to focus and learn how impo
 
    3. Now, just run → npx expo start → Your app can be opened in your browser if you want to test it. This is where I got skeptical when my brother told me about it cause I thought it’s a Webview again. NO, NO NONONO. It just CAN (has the ability to) compile to web.
       1. As long as you don’t use mobile APIs you can do everything in the browser and build for mobile 🪄. Know that mobile specific APIs won’t work in the browser so you need expo go or CNG.
+      
    4. Expo Go - Nothing does it quite like this → This is the fastest and easiest setup EVER https://expo.dev/go
 
       1. Install the expo go app → Log in
@@ -310,6 +311,7 @@ This is the bread and butter. From here on, you need to focus and learn how impo
 7. Database
    1. Prisma
    2. Drizzle
+   
 8. Backend → usually
 
    1. Any backend tech use want to use
