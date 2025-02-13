@@ -6,18 +6,22 @@ layout: two-cols
 
 <div class="mt-8 space-y-2">
 
-## Prisma <img src="/images/Prisma.svg" class="inline-block w-8 h-8 align-middle ml-2"/>
+## [Prisma](https://prisma.io/orm) <img src="/images/Prisma.svg" class="inline-block w-8 h-8 align-middle ml-2"/>
 
-> Next-generation Node.js and TypeScript ORM
+> ORM Node.js et TypeScript de nouvelle génération
 
-### Features
-- ✓ Type-safe database queries
-- ✓ Auto-generated migrations
-- ✓ Powerful data modeling
-- ✓ Works with SQLite, PostgreSQL, MySQL
+<br/>
+
+### Fonctionnalités
+
+- ✓ Requêtes de base de données type-safe
+- ✓ Migrations auto-générées
+- ✓ Modélisation puissante des données
+- ✓ Compatible avec SQLite, PostgreSQL, MySQL
 </div>
 
 ::right::
+
 ```tsx
 // Define your model
 model User {
@@ -35,7 +39,6 @@ const user = await prisma.user.create({
   }
 })
 ```
-
 
 <style>
 .space-y-12 > * + * {
@@ -69,32 +72,34 @@ layout: iframe-right
 url: https://orm.drizzle.team/docs/get-started
 ---
 
+## [Drizzle](https://orm.drizzle.team/) <img src="/images/Drizzle.svg" class="inline-block w-8 h-8 align-middle ml-2"/>
 
-## Drizzle <img src="/images/Drizzle.svg" class="inline-block w-8 h-8 align-middle ml-2"/>
+> ORM TypeScript léger et prêt pour l'edge
 
-> TypeScript ORM that's lightweight and edge-ready
+### Fonctionnalités
 
-### Features
-- ✓ No runtime overhead
-- ✓ SQL-like query builder
-- ✓ Edge compatible
-- ✓ Works with serverless
+- ✓ Pas de surcharge à l'exécution
+- ✓ Constructeur de requêtes style SQL
+- ✓ Compatible edge
+- ✓ Fonctionne avec le serverless
 
 ```tsx
 // Define your schema
-const users = sqliteTable('users', {
-  id: integer('id').primaryKey(),
-  email: text('email').notNull(),
-  name: text('name')
-})
+const users = sqliteTable("users", {
+  id: integer("id").primaryKey(),
+  email: text("email").notNull(),
+  name: text("name"),
+});
 
 // Use in your app
-const newUser = await db.insert(users).values({
-  email: 'user@example.com',
-  name: 'John Doe'
-}).returning()
+const newUser = await db
+  .insert(users)
+  .values({
+    email: "user@example.com",
+    name: "John Doe",
+  })
+  .returning();
 ```
-
 
 <style>
 .space-y-12 > * + * {
@@ -123,104 +128,29 @@ blockquote {
 }
 </style>
 
-
----
-layout: two-cols
 ---
 
-# Backend Solutions
+# Approche Traditionnelle de la Gestion des Données
 
-### Traditional Backend
-> Build your own API server with your preferred technology
+## Défis
 
-```tsx
+- Gestion manuelle des états de chargement
+- Pas de mise en cache intégrée
+- Risque de requêtes en cascade
+- Code verbeux et répétitif
 
-const useWeather = () => {
-  return useQuery({
-    queryKey: ['weather'],
-    queryFn: async () => {
-      const response = await fetch('https://api.weather.com/v1/current')
-      if (!response.ok) {
-        throw new Error('Network response was not ok')
-      }
-      return response.json()
-    }
-  })
-}
-
-const WeatherWithQuery = () => {
-  const { data, isLoading, error } = useWeather()
-
-  if (isLoading) return <div>Loading...</div>
-  if (error) return <div>Error: {error.message}</div>
-  return <div>Temperature: {data.temperature}°C</div>
-}
-```
-::right::
-
-```tsx
-// Example with Express
-// Traditional approach
-const getWeatherData = async () => {
-  try {
-    const response = await fetch('https://api.weather.com/v1/current')
-    if (!response.ok) {
-      throw new Error('Network response was not ok')
-    }
-    const data = await response.json()
-    return data
-  } catch (error) {
-    console.error('Error fetching weather:', error)
-    throw error
-  }
-}
-
-// Usage with error handling, loading states, etc.
-const WeatherComponent = () => {
-  const [data, setData] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const result = await getWeatherData()
-        setData(result)
-      } catch (err) {
-        setError(err)
-      } finally {
-        setLoading(false)
-      }
-    }
-    fetchData()
-  }, [])
-
-  if (loading) return <div>Loading...</div>
-  if (error) return <div>Error: {error.message}</div>
-  return <div>Temperature: {data?.temperature}°C</div>
-}
-
-```
-
----
-layout: two-cols
----
-
-# API Data Flow
-## Traditional vs Modern Approach
-
-<div class="mt-4">
+<div class="mt-8">
 
 ```mermaid
-graph TD
-    A[Component] --> B[useEffect]
-    B --> C[Fetch Data]
-    C --> D{Success?}
-    D -->|Yes| E[Set Data]
-    D -->|No| F[Set Error]
-    E --> G[Render Data]
-    F --> H[Show Error]
-    
+graph LR
+    A[Composant] --> B[useEffect]
+    B --> C[Récupération Données]
+    C --> D{Succès?}
+    D -->|Oui| E[Définir Données]
+    D -->|Non| F[Définir Erreur]
+    E --> G[Rendu Données]
+    F --> H[Afficher Erreur]
+
     style A fill:#e2e8f0
     style B fill:#dbeafe
     style C fill:#bfdbfe
@@ -233,19 +163,28 @@ graph TD
 
 </div>
 
-::right::
+---
 
-<div class="mt-4">
+# Approche Moderne avec TanStack Query
+
+## Avantages
+
+- Mise en cache automatique intelligente
+- Revalidation en arrière-plan
+- Dédoublonnage des requêtes
+- Gestion optimiste des mises à jour
+- Synchronisation en temps réel
+- Pagination infinie intégrée
 
 ```mermaid
-graph TD
-    A1[Component] --> B1[useQuery Hook]
-    B1 --> C1[Cache Check]
-    C1 -->|Hit| D1[Use Cached]
-    C1 -->|Miss| E1[Fetch Data]
-    E1 --> F1[Update Cache]
-    F1 --> G1[Auto Revalidate]
-    
+graph LR
+    A1[Composant] --> B1[Hook useQuery]
+    B1 --> C1[Vérification Cache]
+    C1 -->|Trouvé| D1[Utiliser Cache]
+    C1 -->|Non Trouvé| E1[Récupérer Données]
+    E1 --> F1[Mettre à jour Cache]
+    F1 --> G1[Revalidation Auto]
+
     style A1 fill:#e2e8f0
     style B1 fill:#dbeafe
     style C1 fill:#bfdbfe
@@ -255,31 +194,42 @@ graph TD
     style G1 fill:#34d399
 ```
 
-</div>
-
-<style>
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1e293b;
-}
-
-h2 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #64748b;
-  margin-bottom: 1rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-</style>
-
+---
+layout: two-cols
 ---
 
-### GraphQL
-> Single endpoint, request exactly what you need
+# GraphQL
+
+<div class="mt-4">
+
+```mermaid
+graph TD
+    A[Client] --> B[Point d'Entrée Unique]
+    B --> C[Résolution]
+    C --> D[Base de Données]
+    C --> E[API Externe]
+    C --> F[Services]
+
+    style A fill:#e2e8f0
+    style B fill:#60a5fa
+    style C fill:#34d399
+    style D fill:#93c5fd
+    style E fill:#93c5fd
+    style F fill:#93c5fd
+```
+
+</div>
+
+::right::
+
+> Un point d'entrée unique, demandez exactement ce dont vous avez besoin
+
+### Avantages
+
+- ✓ Requêtes précises et flexibles
+- ✓ Pas de sur-récupération de données
+- ✓ Documentation auto-générée
+- ✓ Type-safety intégré
 
 ```tsx
 const GET_USER = gql`
@@ -289,20 +239,24 @@ const GET_USER = gql`
       email
       posts {
         title
+        comments {
+          content
+          author
+        }
       }
     }
   }
-`
+`;
 ```
 
 ---
 layout: two-cols
 ---
 
-
 # Backend as a Service (BaaS)
 
-#### Supabase <img src="/images/supabase.svg" class="inline-block w-6 h-6 align-middle ml-2"/>
+#### [Supabase](https://supabase.com/docs) <img src="/images/supabase.svg" class="inline-block w-6 h-6 align-middle ml-2"/>
+
 - ✓ PostgreSQL Database
 - ✓ Real-time subscriptions
 - ✓ Auth & Storage
@@ -310,19 +264,31 @@ layout: two-cols
 
 <br>
 
-#### Firebase <img src="/images/firebase.svg" class="inline-block w-6 h-6 align-middle ml-2"/>
+#### [Firebase](https://firebase.google.com/docs) <img src="/images/firebase.svg" class="inline-block w-6 h-6 align-middle ml-2"/>
+
 - ✓ Real-time Database
 - ✓ Cloud Functions
 - ✓ Authentication
 - ✓ Analytics
+
 ::right::
 
-#### Realm <img src="/images/realm.png" class="inline-block w-6 h-6 align-middle ml-2"/>
+#### [Realm](https://www.mongodb.com/docs/realm/) <img src="/images/realm.png" class="inline-block w-6 h-6 align-middle ml-2"/>
+
 - ✓ Local-first database
 - ✓ Offline-first sync
 - ✓ Real-time updates
 - ✓ Cross-platform
 
+<br>
+
+#### [PocketBase](https://pocketbase.io/docs/) <img src="/images/pocket-base.svg" class="inline-block w-6 h-6 align-middle ml-2"/>
+
+- ✓ Backend sans dépendance
+- ✓ Backend ultra léger (16MB)
+- ✓ Interface d'administration intégrée
+- ✓ Stockage de fichiers & authentification
+- ✓ Souscriptions temps réel
 
 <style>
 

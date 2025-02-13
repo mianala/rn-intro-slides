@@ -1,54 +1,28 @@
 ---
-layout: center
----
-
-# Mobile APIs
-## Native Device Features
-
-<div class="mt-8 grid grid-cols-2 gap-8">
-
-<div class="space-y-4">
-
-### Common APIs
-- Camera & QR Code
-- Location Services
-- Push Notifications
-- Biometrics
-- File System
-- Contacts
-- Calendar
-
-</div>
-
-<div class="space-y-4">
-
-### Benefits
-- Native Performance
-- Device Integration
-- Offline Capabilities
-- Enhanced UX
-- Platform Features
-
-</div>
-
-</div>
-
----
 layout: two-cols
 ---
 
 # Testing Framework
-## End-to-End Testing with Maestro
 
+## End-to-End Testing with
+
+<div class="relative flex">
+<span v-mark.yellow="{ at: 0, type: 'highlight'}" class="text-3xl">
+Maestro
+</span>  
+<img src="/images/maestro.png" class="w-8 h-8" />
+</div>
 <div class="mt-8 space-y-2">
 
 ### Why E2E Testing?
+
 - Validates entire user flows
 - Catches integration issues
 - Simulates real user behavior
 - Ensures app stability
 
 ### Maestro Features
+
 - Simple YAML syntax
 - Cross-platform support
 - Visual testing tools
@@ -58,7 +32,6 @@ layout: two-cols
 ::right::
 
 ### Example Flow
-<img src="/images/maestro.png" class="w-8 h-8">
 
 ```yaml
 flow: Login Test
@@ -75,72 +48,87 @@ appId: com.myapp
 
 <br/>
 
-> 😪 I wasn’t able to set it up with windows. Only on Mac.
+> 😪 Je n'ai pas réussi à le configurer sur Windows. Uniquement sur Mac.
 
 ---
 layout: two-cols
 ---
 
-# Debugging & Performance
-## Tools and Best Practices
+# Débogage & Performance
 
-### React Developer Tools
-- Press J to open DevTools
-- Console logging
-- Network monitoring
-- Component inspection
+## Outils et Bonnes Pratiques
 
-### Profilers
-- Android Studio Profiler
-- Xcode Instruments
-- Memory usage
-- CPU performance
-- Network calls
+<br/>
+
+### Outils de Développement React
+
+- Appuyez sur J pour ouvrir DevTools
+- Journalisation console
+- Surveillance réseau
+- Inspection des composants
 
 ::right::
 
-### Performance Monitoring
+### Profileurs
 
-#### Sentry
-- Error tracking
-- Performance monitoring
-- Crash reporting
-- User analytics
-
-#### PostHog
-- Product analytics
-- Feature flags
-- Session recording
-- A/B testing
-
-#### Firebase Analytics
-- User behavior
-- Crash reporting
-- Performance monitoring
-- Custom events
-
+- Profileur Android Studio
+- Instruments Xcode
+- Utilisation mémoire
+- Performance CPU
+- Appels réseau
 
 ---
 layout: two-cols
 ---
 
-# Security Best Practices
+# Surveillance des Performances
+
+### [Sentry](https://sentry.io) <img src="/images/sentry.svg" class="w-8 h-8" />
+
+- Suivi des erreurs
+- Surveillance des performances
+- Rapport de plantage
+- Analytique utilisateur
+
+<br/>
+
+### [PostHog](https://posthog.com) <img src="/images/posthog.svg" class="w-8 h-8" />
+
+- Analytique produit
+- Drapeaux de fonctionnalités
+- Enregistrement de session
+- Tests A/B
+
+::right::
+
+### [Firebase Analytics](https://developers.google.com/analytics/) <img src="/images/analytics.png" class="w-8 h-8" />
+
+- Comportement utilisateur
+- Rapport de plantage
+- Surveillance des performances
+- Événements personnalisés
+
+---
+layout: two-cols
+---
+
+# Bonnes Pratiques de Sécurité
 
 <div class="space-y-2">
 
-### API Security
-- Never expose API keys in code
-- Use environment variables
-- Implement key rotation
-- Use secure endpoints only
-### iOS Storage
-- Use Keychain via `react-native-keychain`
-- Store tokens securely
-- Encrypt sensitive data
-- Avoid AsyncStorage for secrets
-### Android Storage
-- Use Encrypted SharedPreferences
-- Implement Keystore
+### Sécurité API
+
+- Ne jamais exposer les clés API dans le code
+- Utiliser des variables d'environnement
+- Implémenter la rotation des clés
+- Utiliser uniquement des points d'accès sécurisés
+
+### Stockage iOS
+
+- Utiliser Keychain via `react-native-keychain`
+- Stocker les tokens de manière sécurisée
+- Chiffrer les données sensibles
+- Éviter AsyncStorage pour les secrets
 
 </div>
 
@@ -148,37 +136,62 @@ layout: two-cols
 
 <div class="space-y-2">
 
-- Secure token management
-- Protected storage access
+### Stockage Android
 
+- Utiliser SharedPreferences Chiffré
+- Implémenter Keystore
 
-### Secure Solutions
+### Principes Fondamentaux
+
+- Gestion sécurisée des tokens
+- Accès protégé au stockage
+- Chiffrement des données sensibles
+- Protection contre les attaques courantes
+
+</div>
+
+---
+layout: two-cols
+---
+
+# Solutions de Sécurité
+
+### MMKV (Mmap Memory Key Value)
+
+> Stockage haute performance développé par WeChat, optimisé pour les applications mobiles
+
 ```tsx
-// Encrypted Storage
-import EncryptedStorage from 'react-native-encrypted-storage';
-// MMKV with encryption
-import { MMKV } from 'react-native-mmkv';
+// MMKV avec chiffrement
+import { MMKV } from "react-native-mmkv";
 const storage = new MMKV({
-  id: 'app-storage',
-  encryptionKey: 'your-secure-key'
-})
+  id: "app-storage",
+  encryptionKey: "your-secure-key",
+});
 ```
 
-</div>
+### EncryptedStorage
+
+> Solution de stockage chiffré native pour iOS et Android
+
+```tsx
+import EncryptedStorage from "react-native-encrypted-storage";
+```
+
+::right::
 
 <div class="mt-8">
 
 <div class="notice warning">
   <span class="icon">⚠️</span>
   <div>
-    <strong>Important:</strong> Never use AsyncStorage for sensitive data - it's not secure for storing tokens or keys.
+    <strong>Important:</strong> N'utilisez jamais AsyncStorage pour les données sensibles - ce n'est pas sécurisé pour stocker des tokens ou des clés.
   </div>
 </div>
 
 <div class="notice info">
   <span class="icon">💡</span>
   <div>
-    <strong>Tip:</strong> Always use <strong>HTTPS</strong> for API requests. HTTP is not secure and may expose your data.
+    <strong>Conseil:</strong> Utilisez toujours <strong>HTTPS</strong> pour les requêtes API. HTTP n'est pas sécurisé et peut exposer vos données.
   </div>
 </div>
 

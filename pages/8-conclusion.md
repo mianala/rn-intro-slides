@@ -1,61 +1,16 @@
 ---
-layout: two-cols
+layout: center
 ---
 
-# Conclusion
-## What's Next? 🚀
-
-<div class="mt-8 space-y-6">
-
-### Immediate Actions
-<div class="checklist">
-  <label class="checkbox-item">
-    <input type="checkbox"> Sign up for the bootcamp
-  </label>
-  <label class="checkbox-item">
-    <input type="checkbox"> Sign up for the startup course
-  </label>
-</div>
-
-### Course Value
-<div class="value-prop mt-4">
-  <span class="text-2xl">💎</span>
-  <p>I hope you got at least 10x your money's worth!</p>
-</div>
-
-</div>
-
-::right::
-
-<div class="mt-8 space-y-6">
-
-### Future Improvements
-<div class="checklist">
-  <label class="checkbox-item">
-    <input type="checkbox"> Complete documentation coverage
-  </label>
-  <label class="checkbox-item">
-    <input type="checkbox"> Add chapter introductions
-  </label>
-  <label class="checkbox-item">
-    <input type="checkbox"> Improve navigation
-  </label>
-  <label class="checkbox-item">
-    <input type="checkbox"> Simplify technical content
-  </label>
-</div>
-
+<div class="flex flex-col items-center justify-center h-full">
+  <h1 class="text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+    Questions & Réponses
+  </h1>
 </div>
 
 <style>
-.checkbox-item {
-  @apply flex items-center gap-2 text-sm text-gray-700 mb-2 cursor-pointer;
-}
-.checkbox-item input {
-  @apply w-4 h-4 rounded border-gray-300;
-}
-.value-prop {
-  @apply flex items-center gap-3 p-4 bg-blue-50 rounded-lg text-blue-700;
+h1 {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 </style>
 
@@ -63,14 +18,15 @@ layout: two-cols
 layout: two-cols
 ---
 
-# Thank You! 🙏
-## For Being Part of This Journey
+# Merci ! 🙏
+
+## D'Avoir Participé à Cette Aventure
 
 <div class="mt-8 space-y-6">
 
 <div class="thank-you-card">
   <span class="icon">💫</span>
-  <p>Your presence made this workshop special</p>
+  <p>Votre présence a rendu cet atelier spécial</p>
 </div>
 
 <div class="contact-info">
@@ -84,7 +40,11 @@ layout: two-cols
   </div>
   <div class="item">
     <span class="icon">📱</span>
-    <a href="#">Stage App</a>
+    <a href="https://stage.loha.dev">Stage App</a>
+  </div>
+  <div class="item">
+    <span class="icon">👥</span>
+    <a href="https://web.facebook.com/aitimg/?_rdc=1&_rdr#">Facebook</a>
   </div>
 </div>
 
@@ -102,23 +62,24 @@ layout: two-cols
 
 ```json
 {
-  "event": "React Native Workshop",
-  "status": "completed",
-  "host": {
-    "name": "Loharano",
-    "website": "Loha.dev",
+  "événement": "Atelier React Native",
+  "statut": "terminé",
+  "hôte": {
+    "nom": "Loharano",
+    "site": "Loha.dev",
     "email": "mianalaloharano@gmail.com"
   },
-  "venue": "Happy Place",
-  "message": "Thank you for attending! 🚀",
-  "next_steps": {
-    "bootcamp": "Coming soon",
-    "community": "Join our Discord",
-    "support": "24/7 available"
+  "lieu": "Happy Place",
+  "message": "Merci de votre participation ! 🚀",
+  "prochaines_étapes": {
+    "bootcamp": "Bientôt disponible",
+    "communauté": "Rejoignez AITI sur Facebook",
+    "support": "Disponible"
   },
-  "feedback": "Always appreciated! 💝"
+  "retour": "Toujours apprécié ! 💝"
 }
 ```
+
   </div>
 </div>
 

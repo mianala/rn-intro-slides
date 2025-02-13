@@ -1,0 +1,1 @@
+import{f as e,o}from"./modules/vue-BsGlJ3R9.js";import{u as t}from"./slidev/context-BWFA6lZp.js";import{_}from"./index-OhOIrCtA.js";const n={class:"section-header"},s={__name:"SectionHeader",setup(c){return t(),(r,a)=>(o(),e("div",n," I. Pourquoi maintenant ? "))}},u=_(s,[["__scopeId","data-v-b993c9c4"]]);export{u as _};

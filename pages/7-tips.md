@@ -2,31 +2,31 @@
 layout: center
 ---
 
-# Pro Tips <span class="text-amber-500">💡</span>
+# Conseils Pro <span class="text-amber-500">💡</span>
 
-<div class="mt-8 max-w-xl mx-auto space-y-4">
+<div class="mt-8 max-w-2xl mx-auto space-y-5">
 
 <div class="tip-card">
   <span class="icon">📚</span>
   <div class="flex-1">
-    <strong>Learn English</strong>
-    <p>Most resources and documentation are in English</p>
+    <h3>Apprenez l'Anglais</h3>
+    <p>La majorité des ressources et de la documentation sont en anglais</p>
   </div>
 </div>
 
 <div class="tip-card">
   <span class="icon">🐦</span>
   <div class="flex-1">
-    <strong>Use X/Twitter</strong>
-    <p>Follow open source creators for latest updates and tips</p>
+    <h3>Utilisez X/Twitter</h3>
+    <p>Suivez les créateurs open source pour les dernières mises à jour et astuces</p>
   </div>
 </div>
 
 <div class="tip-card">
   <span class="icon">🔄</span>
   <div class="flex-1">
-    <strong>Be Ready for Change</strong>
-    <p>There may be a better and easier way of doing what you're doing tomorrow - that is GOOD, not bad.</p>
+    <h3>Soyez Prêt au Changement</h3>
+    <p>Il peut y avoir une meilleure façon de faire les choses demain - c'est une BONNE chose, pas une mauvaise.</p>
   </div>
 </div>
 
@@ -34,23 +34,23 @@ layout: center
 
 <style>
 h1 {
-  @apply text-2xl font-medium text-gray-800 mb-0;
+  @apply text-3xl font-bold text-gray-800 mb-6;
 }
 
 .tip-card {
-  @apply p-3 rounded-lg bg-gray-50 border border-gray-100;
-  @apply flex items-start gap-3 hover:bg-gray-100 transition-colors;
+  @apply p-4 rounded-lg bg-white shadow-sm border border-gray-200;
+  @apply flex items-start gap-4 hover:bg-gray-50 transition-colors;
 }
 
 .tip-card .icon {
-  @apply text-lg opacity-70;
+  @apply text-2xl;
 }
 
-.tip-card strong {
-  @apply block text-sm font-medium text-gray-700 mb-0.5;
+.tip-card h3 {
+  @apply text-lg font-semibold text-gray-800 mb-1;
 }
 
 .tip-card p {
-  @apply text-xs text-gray-600 leading-relaxed;
+  @apply text-sm text-gray-600 leading-relaxed;
 }
 </style>

@@ -1,152 +1,210 @@
 ---
 theme: seriph
 title: "L'Ère du Mobile : Créez des Applications avec React Native !"
-titleTemplate: '%s - Loha.dev'
+titleTemplate: "%s - Loha.dev"
 author: Randriamanasina Mianala Loharano
-innfo: A presentation of the Loha.dev seminar about React Native
-keywords: react,react-native,software,development,loha,seminaire,learn,tutoriel,tools,dev-tools,pipeline,start,monetization
+innfo: Une présentation du séminaire Loha.dev sur React Native
+keywords: react,react-native,logiciel,développement,loha,seminaire,apprendre,tutoriel,outils,dev-tools,pipeline,démarrage,monétisation
 exportFilename: Loha.dev-react-native
 monaco: true
 monacoTypesSource: cdn
 selectable: true
-favicon: '/images/logo.png'
+favicon: "/images/logo.png"
 layout: image
 image: /slides/1.jpg
+transition: view-transition
+mdc: true
 ---
 
 ---
 layout: image
 image: /slides/2.jpg
+transition: slide-left
 ---
-
-
----
-layout: image-right
-image: /images/Mianala-Family.jpg
----
-
-# Randriamanasina Mianala Loharano
-#### Software Enngineer | Founder of [*Stage*](stage.loha.dev) and [*Loha.dev*](loha.dev)
-<br/>
-
-> 10+ years of experience in Software Development
-
-<br/>
-
-
-### 🚀 Expertise
-<br/>
-
-- Full-Stack Development 
-- Mobile App Development
-- Marketing
-- Technical and Practical Leadership
-- Software Architecture
-- DevOps & CI/CD
 
 ---
 layout: image-right
 image: /images/Mianala.jpg
+transition: slide-left
 ---
 
 # Randriamanasina Mianala Loharano
-#### Software Enngineer | Founder of [*Stage*](stage.loha.dev) and [*Loha.dev*](loha.dev)
-<br/>
 
-> 10+ years of experience in Software Development
+#### Ingénieur Logiciel | Fondateur de [_Stage_](stage.loha.dev) et [_Loha.dev_](loha.dev)
 
 <br/>
 
-### 🎓 Education & Certifications
+> Plus de 10 ans d'expérience en développement logiciel
 
 <br/>
 
-- Master's in Computer Science
-- English - Business Certificate 
-- DevOps Certification
+### 🎓 Formation & Certifications
 
+<br/>
+
+- Master en Informatique
+- Certificat d'Anglais des Affaires
+- Certification DevOps
+
+---
+
+# Mon Parcours
+
+<div class="mt-8">
+  <div class="text-2xl font-bold text-red-600 mb-4">Débuts E-commerce</div>
+  
+  <div class="space-y-4 text-gray-600 mb-6">
+    <div>
+       <div class="text-2xl">
+        <a href="http://zahividy.mg" class="text-red-600 hover:text-red-800" target="_blank">
+          <span v-mark.red="{ at: 0, type: 'strike-through' }">zahividy.mg (2015)</span>
+        </a>
+      </div>
+      <div class="italic mt-2">Focus uniquement sur la technologie, sans vision business</div>
+    </div>
+  </div>
+
+  <div class="border rounded-lg overflow-hidden bg-red-50/50 p-6 max-w-3xl">
+    <div class="text-lg text-red-600">Leçon Apprise</div>
+    <div class="text-gray-600 mt-2">
+      La technologie n'est qu'une composante du succès - le produit nécessite une vision globale
+    </div>
+  </div>
+</div>
+
+---
+
+# Projets Gouvernementaux
+
+<div class="mt-8">
+  <div class="text-2xl font-bold text-blue-600 mb-4">Ministère des Finances</div>
+  
+  <div class="text-gray-600 mb-6">
+    <div>Développement de systèmes critiques</div>
+    <a href="https://www.dgbf.mg/transparence" class="text-blue-500 hover:underline">
+      dgbf.mg/transparence
+    </a>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4">
+    <div class="border rounded-lg overflow-hidden">
+      <img src="/files/image.png" class="w-full h-auto" alt="DGBF Portal" />
+      <div class="p-2 text-sm text-gray-500">Portail de Transparence</div>
+    </div>
+    <div class="border rounded-lg overflow-hidden">
+      <img src="/files/image%201.png" class="w-full h-auto" alt="Mail System" />
+      <div class="p-2 text-sm text-gray-500">Système de Messagerie</div>
+    </div>
+  </div>
+</div>
 
 ---
 layout: two-cols
 ---
 
-# My Journey
+# Succès en Freelance
 
-<br/>
+<div class="mt-8">
+  <div class="text-3xl font-bold text-green-600 mb-4">60.000$+</div>
+  
+  <div class="space-y-4 text-gray-600 mb-6">
+    <div>Revenus sur trois ans</div>
+    <div>Expérience avec des SAAS internationaux</div>
+  </div>
 
-
-
-### Early Days
-- <span v-mark.red="{ at: 1, type: 'strike-through' }"> [zahividy.mg](http://zahividy.mg) (2015)  </span>
-  *All tech, no business skills*
-
-
-<br/>
-
-
-### Government Projects
-- Built <span v-mark.blue="{ at: 2, type: 'highlight' }"> critical systems </span> for Ministry of Finance
-- [dgbf.mg/transparence](https://www.dgbf.mg/transparence)
-
-
-<br/>
-
-
-
-### Freelancing Success
-- <span v-mark.green="{ at: 3, type: 'highlight' }"> **$60,000+** </span> revenue over 3 years
-- International SAAS projects
-
+</div>
 ::right::
-### Leadership
+  <div class="border rounded-lg overflow-hidden max-w-3xl">
+    <img src="/files/image%202.png" class="w-full h-auto" alt="Freelance Projects" />
+  </div>
 
-- <span v-mark.blue="{ at: 4, type: 'underline' }"> Chief Technical Officer </span> at Olona
-- Backend operations expertise
-- Team management
+---
+layout: two-cols
+---
 
+## Leadership
 
-<br/>
+# Direction Technique
 
+<div class="mt-8">
+  <div class="text-2xl font-bold text-purple-600 mb-4">CTO chez Olona</div>
+  
+  <div class="space-y-4 text-gray-600 mb-6">
+    <div>3 mois d'expérience en tant que Directeur Technique</div>
+    <div>Expertise approfondie des opérations backend</div>
+    <div>Identification des services essentiels pour l'industrie</div>
+  </div>
 
-### Education
-- <span v-mark.yellow="{ at: 4, type: 'circle' }"> Teaching 100k-500k Ar </span>class
-- Mentoring new developers
+</div>
+::right::
 
+  <div class="border rounded-lg overflow-hidden max-w-3xl">
+    <img src="/files/image%203.png" class="w-full h-auto" alt="CTO Experience" />
+  </div>
+
+---
+
+# Formation & Mentorat
+
+<div class="mt-8">
+  <div class="text-2xl font-bold text-amber-600 mb-4">Partage d'Expérience</div>
+  
+  <div class="space-y-4 text-gray-600 mb-6">
+    <div class="flex items-center gap-2">
+      <span class="text-2xl font-bold text-amber-500">100.000 - 500.000 Ar</span>
+      <span class="text-sm">par classe</span>
+    </div>
+    <div class="text-md italic mt-2">
+      Une valeur de formation de 500.000 Ar offerte à 1/10 du prix grâce à mon investissement dans ce programme
+    </div>
+  </div>
+
+  <div class="border rounded-lg overflow-hidden bg-amber-50/50 p-6 max-w-3xl">
+    <div class="text-lg text-amber-600">Services Proposés</div>
+    <div class="mt-4 space-y-2">
+      <div class="flex items-center gap-2">
+        <span class="text-amber-500">👨‍🏫</span>
+        <span>Formation Individuelle</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-amber-500">🤝</span>
+        <span>Mentorat de Développeurs</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-amber-500">💡</span>
+        <span>Accompagnement Personnalisé</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 layout: iframe-right
 url: https://stage.loha.dev
 ---
 
-# Current Focus: <span v-mark="{ at: 1, color: '#FFB6C1', type: 'highlight' }">Stage</span>
+# Focus Actuel : <span v-mark="{ at: 0, color: '#FFB6C1', type: 'highlight' }">Stage</span>
 
 <div class="mt-4">
 
-### A Platform for Performers
+### Une Plateforme pour les Artistes
 
 <br/>
 
-- Web App (NextJS)
-- Mobile App (React Native)
-- **Available now** on App Store & Play Store
-- Free plan for everyone
+- Application Web (NextJS)
+- Application Mobile (React Native)
+- **Disponible** sur App Store & Play Store
+- Plan gratuit pour tous
 
 </div>
 
 <div class="px-4 py-4 rounded-sm">
 
-### Development Progress
+### Progression du Développement
 
-![Development Stats](/files/image%204.png "Github Progress")
-
+![Statistiques de Développement](/files/image%204.png "Progression Github")
 
 </div>
-
-<style>
-.slidev-layout {
-  padding: 2rem;
-}
-</style>
 
 ---
 layout: center
@@ -170,7 +228,7 @@ class: text-center
     :enter="{ opacity: 1, y: 0, transition: { duration: 1000 } }"
     class="text-2xl tracking-wide font-light text-gray-500 mb-6"
   >
-    Today, I'll share everything you need to know about
+    Aujourd'hui, je vais partager avec vous tout ce qu'il faut savoir sur
   </div>
 
   <div
@@ -179,21 +237,22 @@ class: text-center
     :enter="{ opacity: 1, scale: 1, transition: { delay: 800, duration: 800, type: 'spring' } }"
     class="text-7xl font-extrabold tracking-tight mb-8"
   >
-    <span v-mark.blue="{ at: 1, type: 'highlight' }">Mobile App </span>
-    <span v-mark.teal="{ at: 2, type: 'underline' }">Development</span>
+    <span>le Développement </span>
+    <span>d'Applications Mobiles</span>
   </div>
 
   <div
     v-motion
     :initial="{ opacity: 0 }"
     :enter="{ opacity: 1, transition: { delay: 1600, duration: 1000 } }"
-    class="text-xl font-medium tracking-wide text-teal-300"
+    class="text-xl font-medium tracking-wide text-neutral-700"
   >
-    <span v-mark.yellow="{ at: 3, type: 'bracket' }">
-      Learn all about mobile app creation with React Native
+    <span>
+      Apprenez tout sur la création d'applications mobiles avec React Native
     </span>
   </div>
 </div>
+
 <div 
   v-motion
   :initial="{ opacity: 0, rotate: -30 }"
@@ -202,7 +261,6 @@ class: text-center
 >
   <img src="/images/react_light.svg" alt="React Logo" class="w-full h-full" />
 </div>
-
 
 <style>
 .slidev-layout {
@@ -220,204 +278,229 @@ class: text-center
 }
 </style>
 
-
 ---
-
+class: p-0
+---
 
 <div class="flex flex-col w-full h-full">
   <div class="bg-gray-100 border-b border-gray-200 px-6 py-4">
     <div class="flex items-center justify-between max-w-6xl mx-auto">
-      <div class="text-xl font-medium text-gray-700">What will you learn?</div>
+      <div class="text-xl font-medium text-gray-700">Que va-t-on apprendre ?</div>
       <div class="flex gap-8">
-        <a href="#developers" class="text-blue-600 hover:text-blue-800 font-medium" :class="{ 'border-b-2 border-blue-600': $slidev.nav.currentPage === 8 }">Developers</a>
-        <a href="#students" class="text-slate-600 hover:text-emerald-800 font-medium" :class="{ 'border-b-2 border-emerald-600': $slidev.nav.currentPage === 9 }">Students</a>
-        <a href="#entrepreneurs" class="text-slate-600 hover:text-purple-800 font-medium" :class="{ 'border-b-2 border-purple-600': $slidev.nav.currentPage === 10 }">Entrepreneurs</a>
+        <a href="/11" class="text-blue-600 hover:text-blue-800 font-medium">Développeurs</a>
+        <a href="/12" class="text-slate-600 hover:text-emerald-800 font-medium" :class="{ 'border-b-2 border-emerald-600': $slidev.nav.currentPage === 9 }">Étudiants</a>
+        <a href="/13" class="text-slate-600 hover:text-purple-800 font-medium" >Entrepreneurs</a>
       </div>
     </div>
   </div>
 
   <div class="flex-1 p-12">
-    <h1 id="developers" class="text-4xl font-bold mb-12">For Developers</h1>
+    <h1 id="developers" class="text-4xl font-bold mb-12">Pour les Développeurs</h1>
     <br/>
     <div class="max-w-2xl mx-auto">
       <div class="text-2xl leading-relaxed mb-8 text-blue-800">
-        Build practical solutions with new tools for your toolkit
+        Construisez des solutions pratiques avec de nouveaux outils pour votre boîte à outils
       </div>
       <br/>
       <div class="flex gap-3 flex-wrap justify-center">
-        <span class="px-4 py-2 bg-blue-100 rounded-full text-blue-800">🛠️ New Tools</span>
-        <span class="px-4 py-2 bg-blue-100 rounded-full text-blue-800">⚡ Practical Skills</span>
-        <span class="px-4 py-2 bg-blue-100 rounded-full text-blue-800">🎯 Real Solutions</span>
+        <span class="px-4 py-2 bg-blue-100 rounded-full text-blue-800">🛠️ Nouveaux Outils</span>
+        <span class="px-4 py-2 bg-blue-100 rounded-full text-blue-800">⚡ Compétences Pratiques</span>
+        <span class="px-4 py-2 bg-blue-100 rounded-full text-blue-800">🎯 Solutions Réelles</span>
       </div>
     </div>
   </div>
 </div>
 
 ---
-
+class: p-0
+---
 
 <div class="flex flex-col w-full h-full">
   <div class="bg-gray-100 border-b border-gray-200 px-6 py-4">
     <div class="flex items-center justify-between max-w-6xl mx-auto">
-      <div class="text-xl font-medium text-gray-700">What will you learn?</div>
+      <div class="text-xl font-medium text-gray-700">Que va-t-on apprendre ?</div>
       <div class="flex gap-8">
-        <a href="#developers" class="text-slate-600 hover:text-blue-800 font-medium" :class="{ 'border-b-2 border-blue-600': $slidev.nav.currentPage === 8 }">Developers</a>
-        <a href="#students" class="text-emerald-600 hover:text-emerald-800 font-medium" :class="{ 'border-b-2 border-emerald-600': $slidev.nav.currentPage === 9 }">Students</a>
-        <a href="#entrepreneurs" class="text-slate-600 hover:text-purple-800 font-medium" :class="{ 'border-b-2 border-purple-600': $slidev.nav.currentPage === 10 }">Entrepreneurs</a>
+        <a href="/11" class="text-slate-600 hover:text-blue-800 font-medium">Développeurs</a>
+        <a href="/12" class="text-emerald-600 hover:text-emerald-800 font-medium">Étudiants</a>
+        <a href="/13" class="text-slate-600 hover:text-purple-800 font-medium" >Entrepreneurs</a>
       </div>
     </div>
   </div>
 
   <div class="flex-1 p-12">
-    <h1 id="students" class="text-4xl font-bold mb-12">For Students</h1>
+    <h1 id="students" class="text-4xl font-bold mb-12">Pour les Étudiants</h1>
     <br/>
     <div class="max-w-2xl mx-auto">
       <div class="text-2xl leading-relaxed mb-8 text-emerald-800">
-        Learn the essential skills through hands-on mobile development
+        Apprenez les compétences essentielles à travers le développement mobile pratique
       </div>
       <br/>
       <div class="flex gap-3 flex-wrap justify-center">
-        <span class="px-4 py-2 bg-emerald-100 rounded-full text-emerald-800">📚 Bootcamp</span>
-        <span class="px-4 py-2 bg-emerald-100 rounded-full text-emerald-800">📱 Mobile Dev</span>
-        <span class="px-4 py-2 bg-emerald-100 rounded-full text-emerald-800">🎓 Guided Learning</span>
+        <span class="px-4 py-2 bg-emerald-100 rounded-full text-emerald-800">📚 Formation</span>
+        <span class="px-4 py-2 bg-emerald-100 rounded-full text-emerald-800">📱 Dév Mobile</span>
+        <span class="px-4 py-2 bg-emerald-100 rounded-full text-emerald-800">🎓 Apprentissage Guidé</span>
       </div>
     </div>
   </div>
 </div>
 
 ---
-
+class: p-0
+---
 
 <div class="flex flex-col w-full h-full">
   <div class="bg-gray-100 border-b border-gray-200 px-6 py-4">
     <div class="flex items-center justify-between max-w-6xl mx-auto">
-      <div class="text-xl font-medium text-gray-700">What will you learn?</div>
+      <div class="text-xl font-medium text-gray-700">Que va-t-on apprendre ?</div>
       <div class="flex gap-8">
-        <a href="#developers" class="text-slate-600 hover:text-blue-800 font-medium" :class="{ 'border-b-2 border-blue-600': $slidev.nav.currentPage === 8 }">Developers</a>
-        <a href="#students" class="text-slate-600 hover:text-emerald-800 font-medium" :class="{ 'border-b-2 border-emerald-600': $slidev.nav.currentPage === 9 }">Entrepreneurs</a>
-        <a href="#entrepreneurs" class="text-purple-600 hover:text-purple-800 font-medium" :class="{ 'border-b-2 border-purple-600': $slidev.nav.currentPage === 10 }">Students</a>
+        <a href="/11" class="text-slate-600 hover:text-blue-800 font-medium">Développeurs</a>
+        <a href="/12" class="text-slate-600 hover:text-emerald-600 font-medium" >Étudiants</a>
+     <a href="/13" class=" text-purple-600 hover:text-emerald-800 font-medium">Entrepreneurs</a>
       </div>
     </div>
   </div>
 
   <div class="flex-1 p-12">
-    <h1 id="entrepreneurs" class="text-4xl font-bold mb-12">For Entrepreneurs</h1>
-      <br/>
+    <h1 id="entrepreneurs" class="text-4xl font-bold mb-12">Pour les Entrepreneurs</h1>
+    <br/>
     <div class="max-w-2xl mx-auto">
       <div class="text-2xl leading-relaxed mb-8 text-purple-800">
-        Gain the visibility you need to make informed decisions
+        Obtenez la visibilité nécessaire pour prendre des décisions éclairées
       </div>
       <br/>
       <div class="flex gap-3 flex-wrap justify-center mb-8">
-        <span class="px-4 py-2 bg-purple-100 rounded-full text-purple-800">💡 Product Vision</span>
-        <span class="px-4 py-2 bg-purple-100 rounded-full text-purple-800">📊 Market Understanding</span>
-        <span class="px-4 py-2 bg-purple-100 rounded-full text-purple-800">🚀 Strategic Growth</span>
+        <span class="px-4 py-2 bg-purple-100 rounded-full text-purple-800">💡 Vision Produit</span>
+        <span class="px-4 py-2 bg-purple-100 rounded-full text-purple-800">📊 Compréhension du Marché</span>
+        <span class="px-4 py-2 bg-purple-100 rounded-full text-purple-800">🚀 Croissance Stratégique</span>
       </div>
       <br/>
       <div class="text-lg text-purple-600 italic text-center mt-8">
-        "The more you know, the more you can help, the more value you can create"
+        "Plus vous en savez, plus vous pouvez aider, plus vous pouvez créer de la valeur"
       </div>
     </div>
   </div>
 </div>
 
-
-<style>
-.slidev-layout {
-  font-family: 'Inter', sans-serif;
-  letter-spacing: -0.02em;
-  padding:0 !important
-}
-
-</style>
-
-
-
 ---
-layout: center
-fonts:
-  sans: Robot
-  weights: '200,400,600'
-  italic: false
+class: p-0
 ---
 
-<div class="absolute top-0 z-[-2] h-screen w-screen rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]"></div>
+<div class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"></div>
 <div class="grid grid-cols-4 gap-4 p-8 h-full">
-  <div v-click class="rounded-lg row-span-2 flex flex-col justify-start gap-5">
-    <h2 class="text-xl font-bold">The <br/> plan</h2>
-    <div v-click class="bg-white rounded-lg p-6 flex flex-col items-center justify-center grow shadow-lg hover:shadow-xl transition-all relative">
+  <div v-motion :initial="{ opacity: 0, x: -100 }" :enter="{ opacity: 1, x: 0, transition: { duration: 800 } }"
+      class="rounded-lg row-span-2 flex flex-col justify-start gap-5">
+      <h2 class="text-xl font-bold">Le <br /> programme</h2>
+      <div v-motion  v-click :initial="{ opacity: 0, scale: 0.8 }"
+          :enter="{ opacity: 1, scale: 1, transition: { delay: 200, duration: 200 } }"
+          class="bg-white rounded-lg p-6 flex flex-col items-center justify-center grow shadow-lg hover:shadow-xl transition-all relative">
+          <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
+              <span class="relative z-10">⏰</span>
+              <div
+                  class="absolute inset-0 blur-lg bg-gradient-to-r from-blue-400 to-purple-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150">
+              </div>
+          </div>
+          <h2 class="text-xl text-center font-bold mt-4">1. Pourquoi maintenant ?</h2>
+          <div
+              class="absolute right-2 top-2 p-2 bg-gray-400 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
+              <span class="text-white text-lg">+</span>
+          </div>
+      </div>
+  </div>
+  <!-- Pipeline Card -->
+  <div v-motion  v-click :initial="{ opacity: 0, y: -50 }"
+      :enter="{ opacity: 1, y: 0, transition: { delay: 200, duration: 200 } }"
+      class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
       <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
-        <span class="relative z-10">⏰</span>
-        <div class="absolute inset-0 blur-lg bg-gradient-to-r from-blue-400 to-purple-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150"></div>
+          <span class="relative z-10">🛣️</span>
+          <div
+              class="absolute inset-0 blur-lg bg-gradient-to-r from-amber-400 to-orange-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150">
+          </div>
       </div>
-      <h2 class="text-xl text-center font-bold mt-4">Why now?</h2>
-      <div class="absolute right-2 top-2 p-2 bg-pink-600 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
-<span class="text-white text-lg">+</span>
-      </div>
-    </div>
-  </div>
-<div v-click class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
-    <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
-      <span class="relative z-10">📝</span>
-      <div class="absolute inset-0 blur-lg bg-gradient-to-r from-cyan-400 to-sky-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150"></div>
-    </div>
-    <h2 class="text-xl text-center font-bold mt-4">Prerequisites</h2>
-    <div class="absolute right-2 top-2 p-2 bg-pink-600 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
-<span class="text-white text-lg">+</span>
+      <h2 class="text-xl text-center font-bold mt-4">2. Pipeline</h2>
+      <div
+          class="absolute right-2 top-2 p-2 bg-gray-400 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
+          <span class="text-white text-lg">+</span>
       </div>
   </div>
-  <div v-click class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
-    <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
-      <span class="relative z-10">🔄</span>
-      <div class="absolute inset-0 blur-lg bg-gradient-to-r from-amber-400 to-orange-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150"></div>
-    </div>
-    <h2 class="text-xl text-center font-bold mt-4">Pipeline</h2>
-    <div class="absolute right-2 top-2 p-2 bg-pink-600 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
-<span class="text-white text-lg">+</span>
+  <div v-motion  v-click :initial="{ opacity: 0, y: -50 }"
+      :enter="{ opacity: 1, y: 0, transition: { delay: 200, duration: 200 } }"
+      class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
+      <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
+          <span class="relative z-10">🗄️</span>
+          <div
+              class="absolute inset-0 blur-lg bg-gradient-to-r from-cyan-400 to-sky-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150">
+          </div>
+      </div>
+      <h2 class="text-xl text-center font-bold mt-4">3. Prérequis</h2>
+      <div
+          class="absolute right-2 top-2 p-2 bg-gray-400 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
+          <span class="text-white text-lg">+</span>
       </div>
   </div>
-  <div v-click class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
-    <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
-      <span class="relative z-10">🛠️</span>
-      <div class="absolute inset-0 blur-lg bg-gradient-to-r from-emerald-400 to-teal-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150"></div>
-    </div>
-    <h2 class="text-xl text-center font-bold mt-4">Developer's Paradise</h2>
-    <div class="absolute right-2 top-2 p-2 bg-pink-600 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
-<span class="text-white text-lg">+</span>
+  <!-- Developer's Paradise Card -->
+  <div v-motion  v-click :initial="{ opacity: 0, y: -50 }"
+      :enter="{ opacity: 1, y: 0, transition: { delay: 200, duration: 200 } }"
+      class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
+      <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
+          <span class="relative z-10">🛠️</span>
+          <div
+              class="absolute inset-0 blur-lg bg-gradient-to-r from-emerald-400 to-teal-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150">
+          </div>
+      </div>
+      <h2 class="text-xl text-center font-bold mt-4">4. Paradis des Développeurs</h2>
+      <div
+          class="absolute right-2 top-2 p-2 bg-gray-400 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
+          <span class="text-white text-lg">+</span>
       </div>
   </div>
-  <div v-click class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
-    <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
-      <span class="relative z-10">🚀</span>
-      <div class="absolute inset-0 blur-lg bg-gradient-to-r from-indigo-400 to-purple-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150"></div>
-    </div>
-    <h2 class="text-xl text-center font-bold mt-4">Publishing</h2>
-    <div class="absolute right-2 top-2 p-2 bg-pink-600 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
-<span class="text-white text-lg">+</span>
+  <!-- Publishing Card -->
+  <div v-motion  v-click :initial="{ opacity: 0, x: 50 }"
+      :enter="{ opacity: 1, x: 0, transition: { delay: 100, duration: 200 } }"
+      class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
+      <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
+          <span class="relative z-10">🚀</span>
+          <div
+              class="absolute inset-0 blur-lg bg-gradient-to-r from-indigo-400 to-purple-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150">
+          </div>
+      </div>
+      <h2 class="text-xl text-center font-bold mt-4">5. Publication</h2>
+      <div
+          class="absolute right-2 top-2 p-2 bg-gray-400 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
+          <span class="text-white text-lg">+</span>
       </div>
   </div>
-
-  <div v-click class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
-    <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
+<!-- Monetization Card -->
+<div v-motion  v-click :initial="{ opacity: 0, x: 50 }"
+  :enter="{ opacity: 1, x: 0, transition: { delay: 200, duration: 200 } }"
+  class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
+  <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
       <span class="relative z-10">💰</span>
-      <div class="absolute inset-0 blur-lg bg-gradient-to-r from-teal-400 to-green-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150"></div>
-    </div>
-    <h2 class="text-xl text-center font-bold mt-4">Monetization</h2>
-    <div class="absolute right-2 top-2 p-2 bg-pink-600 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
-<span class="text-white text-lg">+</span>
+      <div
+          class="absolute inset-0 blur-lg bg-gradient-to-r from-teal-400 to-green-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150">
       </div>
   </div>
-
-  <div v-click class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
-    <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
+  <h2 class="text-xl text-center font-bold mt-4">7. Monétisation</h2>
+  <div
+      class="absolute right-2 top-2 p-2 bg-gray-400 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
+      <span class="text-white text-lg">+</span>
+  </div>
+</div>
+<!-- Q&A Session Card -->
+<div v-motion  v-click :initial="{ opacity: 0, x: 50 }"
+  :enter="{ opacity: 1, x: 0, transition: { delay: 200, duration: 200 } }"
+  class="relative bg-white cursor-pointer rounded-lg p-6 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-all">
+  <div class="text-6xl relative group transition-all duration-300 hover:scale-110">
       <span class="relative z-10">💭</span>
-      <div class="absolute inset-0 blur-lg bg-gradient-to-r from-fuchsia-400 to-pink-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150"></div>
-    </div>
-    <h2 class="text-xl text-center font-bold mt-4">Q&A Session</h2>
-    <div class="absolute right-2 top-2 p-2 bg-pink-600 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
-<span class="text-white text-lg">+</span>
+      <div
+          class="absolute inset-0 blur-lg bg-gradient-to-r from-fuchsia-400 to-pink-400 opacity-20 group-hover:opacity-30 transition-opacity scale-150">
       </div>
   </div>
+  <h2 class="text-xl text-center font-bold mt-4">8. Session Q&R</h2>
+  <div
+      class="absolute right-2 top-2 p-2 bg-gray-400 text-white shadow-md rounded-full w-8 h-8 grid place-items-center place-content-center">
+      <span class="text-white text-lg">+</span>
+  </div>
+</div>
 </div>
 
 <style>
@@ -438,19 +521,35 @@ class: text-center
     v-motion
     :initial="{ opacity: 0, y: 100 }"
     :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }"
-    class="text-6xl font-bold tracking-tight mb-8 text-center"
+    class="text-6xl font-bold tracking-tight mb-8 text-center flex items-center gap-4"
   >
-    Ready?
+    <span 
+      v-motion
+      :initial="{ rotate: 0, y: 0 }"
+      :enter="{ 
+        rotate: [0, -10, 10, -10, 10, 0],
+        y: [0, -10, 0, -10, 0],
+        transition: { 
+          duration: 2000,
+          repeat: Infinity,
+          ease: 'easeInOut'
+        }
+      }"
+      class="inline-block"
+    >
+      🎯
+    </span>
+    <span>Prêt ?</span>
   </div>
 
   <div 
     v-motion
-    :initial="{ scale: 0, rotate: -180 }"
+    :initial="{ scale: 0}"
     :enter="{ scale: 1, rotate: 0, transition: { delay: 800, duration: 1000, type: 'spring' } }"
-    class="relative"
+    class="relative bg-white p-8 rounded-lg border border-gray-100"
   >
-    <div class="text-8xl font-black tracking-tighter bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent text-center">
-      GO
+    <div class="text-8xl text-sky-600 text-center">
+      C'EST PARTI
     </div>
     <div class="absolute inset-0 blur-3xl bg-gradient-to-r from-blue-600/30 to-teal-600/30 -z-10"></div>
   </div>
@@ -459,59 +558,60 @@ class: text-center
     v-motion
     :initial="{ opacity: 0 }"
     :enter="{ opacity: 1, transition: { delay: 1600, duration: 1000 } }"
-    class="absolute bottom-8 text-gray-400"
+    class="absolute bottom-8 text-gray-400 flex items-center gap-2"
   >
-    Press Space to continue
+    <span class="px-2 py-1 bg-gray-100 rounded text-sm">Espace</span>
+    pour continuer
   </div>
 </div>
 
 <style>
 .slidev-layout {
-  font-family: 'Inter', sans-serif;
   letter-spacing: -0.02em;
+  background: #fafafa;
 }
 </style>
 
 ---
 layout: cover
-background: /slides/bg-1-why-now.jpg
+background: /slides/now.png
 ---
 
-<div class="absolute inset-0 -z-10 h-full w-full bg-[rgba(0,0,0,0.4)] backdrop-blur-sm"></div>
-
+<div class="absolute inset-0 -z-10 h-full w-full bg-[rgba(0,0,0,0.4)] backdrop-blur-md"></div>
 <div class="flex flex-col items-center justify-center h-full max-w-4xl mx-auto">
   <div 
     v-motion
     :initial="{ opacity: 0, y: 50 }"
     :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }"
-    class="text-5xl font-bold mb-12 bg-gradient-to-r from-sky-300 to-teal-200 bg-clip-text text-transparent drop-shadow-lg"
+    class="text-6xl font-black mb-16 bg-gradient-to-r from-sky-300 to-teal-200 bg-clip-text text-transparent drop-shadow-lg tracking-tight"
   >
-    I. Why now?
+    I. Pourquoi maintenant ?
   </div>
 
   <div 
     v-motion
     :initial="{ opacity: 0, scale: 0.9 }"
     :enter="{ opacity: 1, scale: 1, transition: { delay: 400, duration: 800 } }"
-    class="text-3xl text-center font-light text-gray-100 leading-relaxed"
+    class="text-4xl text-center font-light text-gray-100 leading-relaxed"
   >
-    I believe that most of you already know this.
-    <span class="block mt-4 text-white font-medium">And that's why you came.</span>
+    Je pense que la plupart d'entre vous 
+    <span class="font-medium text-teal-200">le savent déjà.</span>
+    <span class="block mt-6 text-gray-200 font-medium">Et c'est pour cela que vous êtes là.</span>
   </div>
 
   <div 
     v-motion
     :initial="{ opacity: 0 }"
     :enter="{ opacity: 1, transition: { delay: 1000, duration: 800 } }"
-    class="mt-16 text-sm text-gray-200"
+    class="mt-20 text-xl text-teal-100 font-medium tracking-wide uppercase"
   >
-    Let's explore why this is the perfect moment
+    Découvrons pourquoi c'est le moment idéal →
   </div>
 </div>
 
 <style>
 .slidev-layout {
-  padding: 2rem;
+  @apply px-14 py-10;
 }
 </style>
 
@@ -519,38 +619,64 @@ background: /slides/bg-1-why-now.jpg
 layout: two-cols
 ---
 
-# Screen Time Analysis
+<SectionHeader />
 
-<div class="mt-4">
-<div class="text-4xl font-bold text-blue-600 mb-2">5.4h</div>
-<div class="text-lg text-gray-600">Daily Mobile Usage</div>
+# Analyse du Temps d'Écran
 
-<div class="text-4xl font-bold text-gray-600 mt-6 mb-2">2.9h</div>
-<div class="text-lg text-gray-600">Daily Desktop Usage</div>
+<div class="my-4">
+  <div class="text-4xl font-bold text-red-600 mb-2">4h 48 mn</div>
+  <div class="text-lg text-gray-600">Utilisation Mobile Quotidienne</div>
 
-<div class="mt-6 text-sm text-gray-500">
-Source: DataReportal Digital 2023
+  <div class="text-4xl font-bold text-green-600 mt-6 mb-2">4h 6mn</div>
+  <div class="text-lg text-gray-600">Utilisation PC Quotidienne</div>
+  
+  <div class="text-sm text-gray-500 mt-4 italic">
+    *Varie selon les pays, ratio moyen de 57%/43%
+    <a href="https://www.demandsage.com/screen-time-statistics/" class="text-blue-500 hover:underline ml-1" target="_blank">
+      →
+    </a>
+  </div>
 </div>
-</div>
 
-### Key Insights
-- Mobile dominates screen time
-- 65% more mobile vs desktop usage
-- Consistent YoY growth
-- Social media as main driver
+### Points Clés
+
+- Le mobile domine le temps d'écran
+- Usage mobile en hausse de 6.5% par an
+- 92% du temps sur les applications
+- Les réseaux sociaux en tête
+
+<br/>
+
+> Source: DataReportal Digital 2024
 
 ::right::
 
 <div class="h-full flex items-center justify-center">
 
 ```mermaid {theme: 'neutral', scale: 0.8}
-pie title Daily Usage Distribution
-    "Mobile" : 5.4
-    "Desktop" : 2.9
+pie showData title Distribution Quotidienne (24h)
+    "Sommeil" : 7.5
+    "Mobile" : 4.8
+    "PC/Laptop" : 4.1
+    "Vie Sociale" : 3.2
+    "Travail/École" : 3.0
+    "Autres" : 1.4
+
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'pie1': '#4299E1',
+    'pie2': '#FF6B6B',
+    'pie3': '#4ECE98',
+    'pie4': '#63B3ED',
+    'pie5': '#90CDF4',
+    'pie6': '#BEE3F8'
+  }
+}}%%
 ```
 
 <div class="absolute bottom-4 right-4 text-sm">
-  <a href="https://datareportal.com/reports/digital-2023-global-overview-report" class="text-blue-500 hover:text-blue-700">
+  <a href="https://datareportal.com/reports/digital-2024-global-overview-report" class="text-blue-500 hover:text-blue-700">
     Source →
   </a>
 </div>
@@ -560,25 +686,34 @@ pie title Daily Usage Distribution
 layout: two-cols
 ---
 
-# Global Device Usage
+<SectionHeader />
+
+# Adoption des Appareils Mobiles
 
 <div class="mt-4">
-<div class="text-4xl font-bold text-green-600 mb-2">83.32%</div>
-<div class="text-lg text-gray-600">Global Smartphone Adoption</div>
-
-<div class="text-4xl font-bold text-purple-600 mt-6 mb-2">48.20%</div>
-<div class="text-lg text-gray-600">Madagascar Smartphone Users</div>
-
-<div class="mt-6 text-sm text-gray-500">
-Source: BankMyCell 2023
+<div class="text-4xl font-bold text-green-600 mb-2">85.95% (~8 Milliards)</div>
+<div class="text-lg text-gray-600">Adoption Mondiale des Smartphones</div>
+<div class="my-3 text-sm text-gray-500">
+  Source: <a href="https://www.demandsage.com/smartphone-usage-statistics/" class="text-blue-500 hover:underline" target="_blank">
+    demandsage.com/smartphone-usage-statistics →
+  </a>
 </div>
+<div class="text-4xl font-bold text-purple-600 mt-6 mb-2">44.90% (13.79 Millions)</div>
+<div class="text-lg text-gray-600">Utilisateurs de Smartphones à Madagascar ("1/2024")</div>
+<div class="my-3 text-sm text-gray-500">
+  Source: <a href="https://datareportal.com/reports/digital-2024-madagascar" class="text-blue-500 hover:underline" target="_blank">
+    datareportal.com/reports/digital-2024-madagascar →
+  </a>
 </div>
 
-### Market Analysis
-- Urban areas lead adoption
-- Rural growth accelerating
-- Affordable devices driving change
-- Mobile-first internet access
+</div>
+
+### Analyse du Marché
+
+- Les zones urbaines mènent l'adoption
+- Croissance rurale en accélération
+- Appareils abordables en hausse
+- Internet principalement mobile
 
 ::right::
 
@@ -586,24 +721,25 @@ Source: BankMyCell 2023
 
 ```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-    World["Global Market"]
-    
-    World -->|"83.32%"| WorldSmartphone["Smart Devices"]
-    World -->|"16.68%"| WorldOther["Basic Phones"]
+    World["Marché Mondial"]
 
-style WorldSmartphone fill:#86efac
+    World -->|"85.95%"| WorldSmartphone["Smartphones"]
+    World -->|"14.05%"| WorldOther["Téléphones Basiques & Non-Utilisateurs"]
+
+style WorldSmartphone fill:#22C55E
+style WorldOther fill:#94A3B8
 ```
 
 ```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
     Madagascar["Madagascar"]
-        
-    Madagascar -->|"48.20%"| MadSmartphone["Smart Devices"]
-    Madagascar -->|"51.80%"| MadOther["Basic Phones"]
 
-style MadSmartphone fill:#c084fc
+    Madagascar -->|"44.90%"| MadSmartphone["Smartphones"]
+    Madagascar -->|"55.10%"| MadOther["Téléphones Basiques & Non-Utilisateurs"]
+
+style MadSmartphone fill:#A855F7
+style MadOther fill:#94A3B8
 ```
-
 
 </div>
 
@@ -611,55 +747,76 @@ style MadSmartphone fill:#c084fc
 layout: two-cols
 ---
 
-# Market Overview
+<SectionHeader />
 
-<div class="mt-4">
-<div class="text-4xl font-bold text-orange-600 mb-2">$935B</div>
-<div class="text-lg text-gray-600">Mobile Revenue (2023)</div>
+# Aperçu du Marché
 
-<div class="text-4xl font-bold text-indigo-600 mt-6 mb-2">$593B</div>
-<div class="text-lg text-gray-600">Traditional Software</div>
+<div class="my-4">
+<div class="text-4xl font-bold text-orange-600 mb-2">935 Mrd$</div>
+<div class="text-lg text-gray-600">Revenus Mobile (2023)</div>
 
-<div class="mt-6 text-sm text-gray-500">
-Source: Statista Market Outlook
-</div>
+<div class="text-4xl font-bold text-indigo-600 mt-6 mb-2">593 Mrd$</div>
+<div class="text-lg text-gray-600">Logiciels Traditionnels</div>
 </div>
 
-### Industry Trends
-- Mobile-first dominance
-- Faster mobile growth
-- Higher engagement rates
-- Lower entry barriers
+### Tendances du Marché
 
+- Dominance du mobile-first
+- Croissance mobile plus rapide
+- Taux d'engagement supérieur
+- Barrières d'entrée réduites
+
+<br/>
 
 ::right::
 
-
-<div class="h-full flex items-center justify-center">
+<div class=" flex items-center justify-center">
 
 ```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-    Market["Software Market"]
-    Mobile["Mobile<br/>$935B"]
-    Traditional["Desktop<br/>$593B"]
-    
+    Market["Marché Logiciel"]
+    Mobile["Mobile<br/>935 Mrd$"]
+    Traditional["Bureau<br/>593 Mrd$"]
+
     Market --> Mobile
     Market --> Traditional
-    
-    Mobile --> AppStore["iOS<br/>$85B"]
-    Mobile --> PlayStore["Android<br/>$48B"]
-    Mobile --> Other["Others"]
-    
-style Mobile fill:#fdba74
-style Traditional fill:#818cf8
+
+    Mobile --> AppStore["iOS<br/>85 Mrd$"]
+    Mobile --> PlayStore["Android<br/>48 Mrd$"]
+    Mobile --> Other["Autres"]
+
+style Mobile fill:#FF6B6B
+style Traditional fill:#4ECE98
+style AppStore fill:#63B3ED
+style PlayStore fill:#90CDF4
+style Other fill:#BEE3F8
 ```
 
 </div>
-
+<div class="text-sm text-gray-500 space-y-2">
+  <div>
+    Sources: 
+    <a href="https://www.statista.com/forecasts/1262892/mobile-app-revenue-worldwide-by-segment" class="text-blue-500 hover:underline" target="_blank">
+      statista.com/forecasts/mobile-app-revenue →
+    </a>
+  </div>
+  <div>
+    <a href="https://ryvilion.medium.com/statistics-on-mobile-app-downloads-and-usage-2023-04c919d9a139" class="text-blue-500 hover:underline" target="_blank">
+      medium.com/statistics-on-mobile-app-downloads →
+    </a>
+  </div>
+  <div>
+    <a href="https://www.atimi.com/posts/mobile-apps-are-expected-to-generate-935-billion-in-revenue-by-2023" class="text-blue-500 hover:underline" target="_blank">
+      .atimi.com/mobile-apps-are-expected-to-generate-935-billion-in-revenue-by-2023 →
+    </a>
+  </div>
+</div>
 
 ---
 layout: two-cols
 ---
+
+<SectionHeader />
 
 <div class="flex flex-col justify-center h-full pr-8">
   <div 
@@ -668,7 +825,7 @@ layout: two-cols
     :enter="{ opacity: 1, x: 0, transition: { duration: 800 } }"
     class="text-4xl font-bold leading-tight mb-8 bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent"
   >
-    "Meet users where they are - on mobile"
+    "Soyez là où sont vos utilisateurs - sur mobile"
   </div>
 
   <div class="space-y-6">
@@ -678,9 +835,9 @@ layout: two-cols
       :enter="{ opacity: 1, transition: { delay: 400, duration: 800 } }"
       class="flex gap-3 flex-wrap"
     >
-      <span class="px-4 py-2 bg-blue-100 rounded-full text-blue-800">📱 Mobile First</span>
-      <span class="px-4 py-2 bg-teal-100 rounded-full text-teal-800">🎯 Direct Access</span>
-      <span class="px-4 py-2 bg-indigo-100 rounded-full text-indigo-800">💫 Better Experience</span>
+      <span class="px-4 py-2 bg-blue-100 rounded-full text-blue-800">📱 Mobile en Premier</span>
+      <span class="px-4 py-2 bg-teal-100 rounded-full text-teal-800">🎯 Accès Direct</span>
+      <span class="px-4 py-2 bg-indigo-100 rounded-full text-indigo-800">💫 Meilleure Expérience</span>
     </div>
 <br/>
     <div 
@@ -689,7 +846,7 @@ layout: two-cols
       :enter="{ opacity: 1, transition: { delay: 800, duration: 800 } }"
       class="text-lg text-gray-600 leading-relaxed"
     >
-      Your users are already on their phones. That's where your app needs to be - accessible, convenient, and ready to use.
+      Vos utilisateurs sont déjà sur leurs téléphones. C'est là que votre application doit être - accessible, pratique et prête à l'emploi.
     </div>
   </div>
 </div>
@@ -738,7 +895,9 @@ layout: two-cols
 layout: two-cols
 ---
 
-# My Mobile Journey
+<SectionHeader />
+
+# Mon Parcours Mobile
 
 <div class="mt-8 relative">
   <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200"></div>
@@ -765,8 +924,8 @@ layout: two-cols
     <div class="absolute left-5 w-3 h-3 bg-green-500 rounded-full shadow-lg z-10"></div>
     <div class="ml-16">
       <img src="/images/android.svg" class="w-12 h-12 mb-2" />
-      <div class="font-bold text-xl">Native Android</div>
-      <div class="text-gray-600">Java & Kotlin</div>
+      <div class="font-bold text-xl">Android Natif</div>
+      <div class="text-gray-600">Java</div>
     </div>
   </div>
 </div>
@@ -775,202 +934,221 @@ layout: two-cols
 
 <div v-click class="mt-8 relative">
   <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gray-200"></div>
-  <div  class="flex items-center gap-4 mb-12 relative">
+  <div class="flex items-center gap-4 mb-12 relative">
     <div class="absolute left-5 w-3 h-3 bg-blue-500 rounded-full shadow-lg z-10"></div>
     <div class="ml-16">
       <img src="/images/chromium.svg" class="w-12 h-12 mb-2" />
-      <div class="font-bold text-xl">Webview wrappers</div>
-      <div class="text-gray-600">Cordova & Phone Gap & Ionic</div>
+      <div class="font-bold text-xl">Solutions Hybrides</div>
+      <div class="text-gray-600">Cordova, PhoneGap & Ionic</div>
     </div>
   </div>
 </div>
 
 ---
 layout: center
+class: p-0
 ---
 
-<div class="flex items-center justify-center gap-20">
-  <div v-click class="text-center">
-    <img src="/images/flutter.svg" class="w-32 h-32 mb-4" />
-    <div class="text-2xl font-bold">Flutter</div>
+<SectionHeader />
+
+<div class="absolute inset-0 -z-10 overflow-hidden bg-[#2A2A2A]">
+  <div class="absolute inset-0 bg-[url('/images/ramen-pattern.png')] opacity-5"></div>
+</div>
+
+<div class="w-full h-full relative flex items-center justify-center gap-20">
+  <div v-motion :initial="{ scale: 0.9, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { duration: 800 } }" class="text-center retro-card">
+    <img src="/images/flutter.svg" class="w-32 h-32 mb-4 drop-shadow-[0_0_15px_rgba(255,165,0,0.5)]" />
+    <div class="text-2xl font-bold text-orange-500 ninja-text">Flutter</div>
   </div>
 
-  <div  class="flex flex-col items-center">
-    <div class="text-6xl mb-8">vs</div>
-    <div class="text-xl text-gray-500 italic">Like Naruto & Sasuke</div>
+  <div class="flex flex-col items-center">
+    <div class="text-7xl mb-8 ninja-text text-red-500 font-bold transform rotate-[-5deg]">VS</div>
+    <div class="text-xl italic px-6 py-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 text-white transform rotate-[-2deg] shadow-[0_0_20px_rgba(255,69,0,0.4)] border-2 border-white/20">
+      Comme Naruto & Sasuke
+    </div>
   </div>
 
-  <div  class="text-center">
-    <img src="/images/react.svg" class="w-32 h-32 mb-4" />
-    <div class="text-2xl font-bold">React Native</div>
+  <div v-motion :initial="{ scale: 0.9, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { duration: 800, delay: 200 } }" class="text-center flex flex-col items-center justify-center retro-card">
+    <img src="/images/react.svg" class="w-32 h-32 mb-4 drop-shadow-[0_0_15px_rgba(0,191,255,0.5)]" />
+    <div class="text-2xl font-bold text-blue-400 ninja-text">React Native</div>
   </div>
 </div>
 
-<div v-click class="text-center mt-12 text-xl text-gray-600">
-  Pushing each other to get better 🚀
+<div 
+  v-motion 
+  :initial="{ opacity: 0, y: 20 }" 
+  :enter="{ opacity: 1, y: 0, transition: { delay: 600, duration: 1000 } }"
+  class="text-center mt-16 text-xl font-bold ninja-text"
+>
+  <div class="bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 text-transparent bg-clip-text transform rotate-[-1deg] drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]">
+    S'améliorant mutuellement vers l'excellence 🚀
+  </div>
 </div>
+
+<style>
+.ninja-text {
+  font-family: 'ninja-naruto', 'Arial Black', sans-serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.retro-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  transform: rotate(-2deg);
+  transition: all 0.3s ease;
+}
+
+.retro-card:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 69, 0, 0.2);
+}
+</style>
 
 ---
 layout: center
-class: text-center
 ---
 
-# The Evolution of Mobile Development
-
-<div class="grid grid-cols-3 gap-8 mt-12">
-  <div v-click class="space-y-4 opacity-50">
-    <div class="text-4xl">👶</div>
-    <div class="font-bold">Early Days</div>
-    <div class="text-sm text-gray-600">
-      Webview Wrappers
-      <br/>
-      Cordova, Phonegap, Ionic
-    </div>
-  </div>
-
-  <div v-click class="space-y-4 opacity-75">
-    <div class="text-4xl">🏃‍♂️</div>
-    <div class="font-bold">Growing Phase</div>
-    <div class="text-sm text-gray-600">
-      Cross-Platform Solutions
-      <br/>
-      Flutter, React Native
-    </div>
-  </div>
-
-  <div v-click class="space-y-4">
-    <div class="text-4xl">🚀</div>
-    <div class="font-bold">Today</div>
-    <div class="text-sm text-gray-600">
-      Mature Ecosystem
-      <br/>
-      Production-Ready Tools
-    </div>
-  </div>
-</div>
-
----
-layout: cover
-class: text-center
----
+<SectionHeader />
 
 <div class="text-4xl font-bold mb-8">
-  Why React Native, Why Now?
+  Pourquoi React Native, Pourquoi Maintenant ?
+</div>
+<div class="my-6 text-3xl text-gray-600">
+ Il n'a jamais été aussi <span v-mark.blue="{ at: 0, type: 'highlight' }">facile</span> de créer des applications mobiles <span v-mark.green="{ at: 0, type: 'highlight' }">prêtes pour la production</span>
 </div>
 
-<div v-click class="text-6xl mb-12">
-  🎯 SAFE
+<div  class="text-6xl mb-12">
+  🔒 SÉCURISÉ
+
 </div>
 
-<div v-click class="text-6xl mb-12">
-  🛡️ STABLE
+<div  class="text-6xl mb-12">
+  🛩️ STABLE
 </div>
 
-<div v-click class="text-6xl">
-  ⚡ RELIABLE
+<div  class="text-6xl">
+  ✅ RELIABLE
 </div>
-
-<div v-click class="mt-12 text-xl text-gray-600">
-  It's never been easier to build production-ready mobile apps
-</div>
-
 
 ---
 layout: two-cols
 ---
 
-# Building Mobile Apps: <br/> <span class="text-blue-600">Then vs Now</span>
+<SectionHeader />
+
+# Développement Mobile : <br/> <span class="text-blue-600">Avant vs Maintenant</span>
 
 <div class="mt-8 space-y-6">
-  <div v-click class="flex items-start gap-4">
+  <div class="flex items-start gap-4">
     <div class="text-3xl">🎯</div>
     <div>
-      <div class="font-bold text-xl text-blue-800">Single Codebase</div>
-      <div class="text-gray-600 mt-1">Write once, run everywhere</div>
+      <div class="font-bold text-xl text-blue-800">Base de Code Unique</div>
+      <div class="text-gray-600 mt-1">Écrire une fois, déployer partout</div>
     </div>
   </div>
 
-  <div v-click class="flex items-start gap-4">
+  <div class="flex items-start gap-4">
     <div class="text-3xl">⚡</div>
     <div>
-      <div class="font-bold text-xl text-blue-800">Native Performance</div>
-      <div class="text-gray-600 mt-1">Real native components, not WebView</div>
+      <div class="font-bold text-xl text-blue-800">Performance Native</div>
+      <div class="text-gray-600 mt-1">Composants natifs réels, pas de WebView</div>
     </div>
   </div>
 
-  <div v-click class="flex items-start gap-4">
+  <div class="flex items-start gap-4">
     <div class="text-3xl">🔄</div>
     <div>
-      <div class="font-bold text-xl text-blue-800">Live Reloading</div>
-      <div class="text-gray-600 mt-1">Instant feedback loop</div>
+      <div class="font-bold text-xl text-blue-800">Rechargement en Direct</div>
+      <div class="text-gray-600 mt-1">Retour instantané des modifications</div>
+    </div>
+  </div>
+
+  <div class="flex items-start gap-4">
+    <div class="text-3xl">✨</div>
+    <div>
+      <div class="font-bold text-xl text-blue-800">UI Simplifiée</div>
+      <div class="text-gray-600 mt-1">Développement d'interface facilité</div>
     </div>
   </div>
 </div>
 
 ::right::
 
-<div class="h-full flex items-center justify-center">
+<div class="h-full flex flex-col items-center justify-center">
 
 ```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-    Start["Traditional Mobile Dev"] --> Native["Native Apps<br/>2x Development"]
-    Start --> Hybrid["Hybrid Apps<br/>Poor Performance"]
-    
-    Modern["Modern RN Development"] --> Single["Single Codebase"]
+    Start["Développement Mobile Traditionnel <br/> x3 Développement"] --> Native["Apps Natives<br/>2x Développement"]
+    Start --> Hybrid["Apps Hybrides<br/>Performance Limitée"]
+    Start --> Web["Web <br/>(Optionnel)x1  <br/> developpement"]
+style Hybrid fill:#f58d75
+```
+
+```mermaid {theme: 'neutral', scale: 0.8}
+graph TD
+    Modern["Développement RN Moderne"] --> Single["Base de Code Unique"]
     Single --> iOS["iOS"]
     Single --> Android["Android"]
-    Single --> Web["Web Optional"]
+    Single --> Web["Web (Optionnel)"]
 
 style Modern fill:#93c5fd
-style Single fill:#bfdbfe
+style Single fill:#96ED89
 ```
 
 </div>
 
 ---
-layout: two-cols
+layout: center
 ---
 
-# Community & Ecosystem
+<SectionHeader />
 
-<div class="mt-4 space-y-6">
+# Communauté & Écosystème
+
+<div class="mt-4 space-x-6 flex items-center justify-center">
   <div v-click>
-    <div class="text-4xl font-bold text-blue-600 mb-2">2M+</div>
-    <div class="text-lg text-gray-600">Monthly npm Downloads</div>
+    <a href="https://npmtrends.com/react-native" target="_blank" class="hover:opacity-80 transition-opacity">
+      <div class="text-4xl font-bold text-blue-600 mb-2">2M+ 📉</div>
+      <div class="text-md text-gray-600">Téléchargements npm mensuels</div>
+    </a>
   </div>
-
   <div v-click>
-    <div class="text-4xl font-bold text-green-600 mb-2">50K+</div>
-    <div class="text-lg text-gray-600">GitHub Stars</div>
+    <a href="https://github.com/facebook/react-native" target="_blank" class="hover:opacity-80 transition-opacity">
+      <div class="text-4xl font-bold text-green-600 mb-2">121K+ ⭐️</div>
+      <div class="text-md text-gray-600">Étoiles GitHub</div>
+    </a>
   </div>
-
-  <div v-click class="bg-blue-50 p-4 rounded-lg">
-    <div class="font-medium text-blue-800">Backed by Industry Giants</div>
-    <div class="text-sm text-blue-600 mt-2">Meta, Microsoft, Shopify, Discord</div>
+  <div v-click>
+    <a href="https://github.com/jondot/awesome-react-native" target="_blank" class="hover:opacity-80 transition-opacity">
+      <div class="text-4xl font-bold text-red-600 mb-2">34.9K+ ⭐️</div>
+      <div class="text-md text-gray-600">awesome-react-native</div>
+    </a>
   </div>
 </div>
 
-::right::
-
-<div class="h-full flex items-center justify-center">
+<div v-click class="h-full flex items-center justify-center">
 
 ```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-    RN["React Native Ecosystem"]
-    
-    RN --> UI["UI Libraries"]
-    RN --> State["State Management"]
-    RN --> Native["Native Modules"]
-    
+    RN["Écosystème React Native"]
+
+    RN --> UI["Bibliothèques UI"]
+    RN --> State["Gestion d'État"]
+    RN --> Native["Modules Natifs"]
+
     UI --> Paper["Paper"]
     UI --> Elements["Elements"]
-    
-    State --> Redux["Redux"]
-    State --> Recoil["Recoil"]
-    
-    Native --> Camera["Camera"]
-    Native --> Maps["Maps"]
-    
+
+    State --> zustand["zustand"]
+    State --> legend-state["legend-state"]
+
+    Native --> Camera["Caméra"]
+    Native --> Maps["Cartes"]
+
 style RN fill:#93c5fd
 style UI fill:#bfdbfe
 style State fill:#bfdbfe
@@ -980,71 +1158,153 @@ style Native fill:#bfdbfe
 </div>
 
 ---
+layout: two-cols
+---
+
+<SectionHeader />
+
+# Cross-Platform & Coûts
+
+<div class="mt-8 space-y-6">
+  <div class="mb-8">
+    <div class="text-2xl font-bold text-blue-600 mb-4">Logique Cross-Platform</div>
+    <ul class="space-y-2 text-gray-600">
+      <li>Logique métier partagée (auth, API, état)</li>
+      <li>Adaptations minimales par plateforme</li>
+      <li>Code réutilisable à 90%</li>
+    </ul>
+  </div>
+
+  <div>
+    <div class="text-2xl font-bold text-green-600 mb-4">Réduction des Coûts</div>
+    <ul class="space-y-2 text-gray-600">
+      <li>Une seule équipe pour les deux plateformes</li>
+      <li>Mise sur le marché plus rapide</li>
+      <li>Maintenance simplifiée</li>
+    </ul>
+  </div>
+</div>
+
+::right::
+
+<div class="h-full flex flex-col items-center justify-center">
+
+```mermaid {theme: 'neutral', scale: 0.8}
+graph TD
+    Code["Base de Code Unique"]
+    Code --> iOS["Application iOS"]
+    Code --> Android["Application Android"]
+    Code --> Web["Application Web"]
+
+style Code fill:#93c5fd
+```
+
+```mermaid {theme: 'neutral', scale: 0.8}
+graph TD
+    Logic["Logique Partagée"]
+    Logic --> Auth["Authentication"]
+    Logic --> API["Appels API"]
+    Logic --> State["Gestion d'État"]
+
+style Logic fill:#93c5fd
+```
+
+</div>
+
+---
 layout: center
 ---
 
-<div class="flex flex-col items-center">
-  <div 
-    v-motion
-    :initial="{ opacity: 0, y: 50 }"
-    :enter="{ opacity: 1, y: 0, transition: { duration: 800 } }"
-    class="text-4xl font-bold mb-12 text-center"
-  >
-    Learning Curve Comparison
-  </div>
+<SectionHeader />
 
-  <div class="w-full max-w-3xl">
+# Courbe d'Apprentissage
+
+<div class="grid grid-cols-5 gap-12 mt-12 max-w-5xl mx-auto">
+  <div class="flex flex-col col-span-2 space-y-6">
+    <div class="w-full">
 
 ```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
     TS["TypeScript"] --> RN["React Native"]
-    RN --> Mobile["Mobile Apps"]
-    RN --> Web["Web Apps"]
-    Web --> Next["Next.js Apps"]
-    
+    RN --> Mobile["Applications Mobiles"]
+    RN --> Web["Applications Web"]
+    Web --> Next["Applications Next.js"]
+
     style TS fill:#93c5fd
     style RN fill:#bfdbfe
     style Mobile fill:#dbeafe
     style Web fill:#dbeafe
     style Next fill:#dbeafe
 ```
-</div>
 
-  <div class="mt-12 text-xl text-center text-gray-600">
-    One language to rule them all: <span class="text-blue-600 font-medium">TypeScript</span>
+<div class="text-lg text-gray-600 text-center">
+      Un langage pour les gouverner tous : <span class="text-blue-600 font-medium">TypeScript</span>
+    </div>
+  </div>
+  </div>
+   <div class="flex flex-col col-span-3 space-y-4">
+    <div class="w-full">
+```mermaid 
+%%{init: {'theme': 'neutral', "themeVariables": {"xyChart": {"plotColorPalette":" #93c5fd, #000"} } }}%%
+xychart-beta
+title "Niveau vs Temps"
+x-axis "Mois" 1 --> 12
+y-axis "Niveau" 0 --> 100
+line "React Native" [0, 30, 45, 65, 80, 90]
+line "Natif Android/iOS" [0, 20, 35, 45, 50, 55]
+```
+<div class="text-lg text-gray-600 text-center">
+      Autres Solutions vs <span class="text-blue-600 font-medium">Typescript React</span>
+    </div>
+  
+  </div>
   </div>
 </div>
 
-<style>
-.slidev-layout {
-  padding: 2rem;
-}
-</style>
+---
+layout: center
+class: p-0
+---
+
+<SectionHeader />
+
+<SlidevVideo autoplay controls>
+  <source src="/files/bacon.mp4" type="video/mp4" />
+  <p>
+    Your browser does not support videos. You may download it
+    <a href="/myMovie.mp4">here</a>.
+  </p>
+</SlidevVideo>
 
 ---
 layout: center
 class: text-center
 ---
 
-<div class="text-4xl font-bold mb-12">
-  The Mobile Development Revolution
-</div>
+<SectionHeader />
 
 <div class="flex flex-col items-center gap-8">
-  <div v-click class="text-2xl">
-    <span class="text-green-600 font-bold">↗️ Value </span>
-    <span class="text-gray-600">of mobile apps increased drastically</span>
+
+  <div class="text-2xl flex items-center gap-2">
+    <mdi-trending-up class="text-green-600 text-3xl" />
+    <span class="text-green-600 font-bold">Valeur </span>
+    <span class="text-gray-600">des applications mobiles en forte hausse</span>
   </div>
 
-  <div v-click class="text-2xl">
-    <span class="text-blue-600 font-bold">↘️ Difficulty </span>
-    <span class="text-gray-600">in building decreased significantly</span>
+  <div class="text-2xl flex items-center gap-2">
+    <mdi-trending-down class="text-blue-600 text-3xl" />
+    <span class="text-blue-600 font-bold">Difficulté </span>
+    <span class="text-gray-600">de développement considérablement réduite</span>
   </div>
 </div>
 
-<div v-click class="mt-16 text-lg text-gray-500 italic">
-  "From what I see, this is hands down the best tech to build mobile apps with"
+<div class="mt-16 text-xl text-gray-500 p-3 rounded-md bg-yellow-200 italic flex items-center gap-2 justify-center">
+  <mdi-lightbulb class="text-yellow-500" />
+  "De mon point de vue, c'est clairement la meilleure technologie pour créer des applications mobiles"
 </div>
+ <div v-click class="text-3xl font-bold text-gray-800 my-8">
+    La Révolution du Développement Mobile 🎉
+  </div>
 
 ---
 src: ./pages/2-pipeline.md

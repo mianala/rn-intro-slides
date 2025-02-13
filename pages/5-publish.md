@@ -2,26 +2,28 @@
 layout: default
 ---
 
-# Publishing Your App
-## Google Play Store <img src="/images/playstore.svg" class="inline-block w-8 h-8 align-middle ml-2"/>
+# Publication de Votre Application
+
+## [Google Play Store](https://play.google.com/console/u/0/developers/7358940604964515304/app/4975077952969723783/subscriptions) <img src="/images/playstore.svg" class="inline-block w-8 h-8 align-middle ml-2"/>
 
 <div class="mt-8 space-y-4">
 
-### Steps to Publish
-1. Create your account
-2. Create a new app
-3. Create a new release
-4. Upload AAB
-5. Add info
-6. Send for review
-7. Wait for a few hours
+### Étapes de Publication
+
+1. Créer votre compte
+2. Créer une nouvelle application
+3. Créer une nouvelle version
+4. Téléverser l'AAB
+5. Ajouter les informations
+6. Envoyer pour révision
+7. Attendre quelques heures
 
 </div>
 
 <div class="mt-8">
 <div class="notice info">
   <span class="icon">⏱️</span>
-  <div>Review process typically takes a few hours</div>
+  <div>Le processus de révision prend généralement quelques heures</div>
 </div>
 </div>
 
@@ -46,26 +48,28 @@ h3 {
 
 ---
 
-# App Store Connect
+# [App Store Connect](https://appstoreconnect.apple.com/)
+
 ## Apple App Store <img src="/images/Apple_light.svg" class="inline-block w-8 h-8 align-middle ml-2"/>
 
 <div class="mt-8 space-y-4">
 
-### Publishing Process
-1. Create your account
-2. Create an app
-3. Create a new version
-4. Select build
-5. Add info
-6. Send for review
-7. Wait for a few days
+### Processus de Publication
+
+1. Créer votre compte
+2. Créer une application
+3. Créer une nouvelle version
+4. Sélectionner le build
+5. Ajouter les informations
+6. Envoyer pour révision
+7. Attendre quelques jours
 
 </div>
 
 <div class="mt-8">
 <div class="notice warning">
   <span class="icon">⚠️</span>
-  <div>Review process may take several days</div>
+  <div>Le processus de révision peut prendre plusieurs jours</div>
 </div>
 </div>
 
@@ -94,25 +98,27 @@ url: https://fastlane.tools/
 ---
 
 # Fastlane
-## Automation Tool
+
+## Outil d'Automatisation
 
 <div class="mt-8">
 <div class="notice info">
   <span class="icon">💡</span>
   <div>
-    <strong>Note:</strong> Haven't used yet, but it's a popular tool for automating builds and releases
+    <strong>Note :</strong> Pas encore utilisé, mais c'est un outil populaire pour automatiser les builds et les déploiements
   </div>
 </div>
 </div>
 
 <div class="mt-8 space-y-4">
 
-### Features
-- Automated screenshots
-- App signing
-- Beta deployment
-- App Store deployment
-- Play Store deployment
+### Fonctionnalités
+
+- Captures d'écran automatisées
+- Signature d'applications
+- Déploiement bêta
+- Déploiement App Store
+- Déploiement Play Store
 
 </div>
 
@@ -141,25 +147,27 @@ url: https://bitrise.io/
 ---
 
 # Bitrise
-## CI/CD Platform 
+
+## Plateforme CI/CD
 
 <div class="mt-8">
 <div class="notice info">
   <span class="icon">💡</span>
   <div>
-    <strong>Note:</strong> Haven't used yet, but it's specialized for mobile app CI/CD
+    <strong>Note :</strong> Pas encore utilisé, mais c'est spécialisé pour le CI/CD d'applications mobiles
   </div>
 </div>
 </div>
 
 <div class="mt-8 space-y-4">
 
-### Key Features
-- Mobile-first CI/CD
-- Automated testing
-- Code signing
-- Deploy to stores
-- Build automation
+### Fonctionnalités Clés
+
+- CI/CD orienté mobile
+- Tests automatisés
+- Signature de code
+- Déploiement vers les stores
+- Automatisation des builds
 
 </div>
 
@@ -187,11 +195,13 @@ layout: default
 ---
 
 # EAS Build
+
 ## Expo Application Services <img src="/images/expo.svg" class="inline-block w-8 h-8 align-middle ml-2"/>
 
 <div class="mt-8 space-y-4">
 
 ### Build Process
+
 1. Sign up in [Expo.dev](http://Expo.dev)
 2. Install EAS CLI
 3. Run `eas build`

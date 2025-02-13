@@ -5,16 +5,16 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 
 <div class="container mx-auto max-w-3xl p-8 bg-white/90 backdrop-blur-sm rounded-xl">
 
-# Monetization 💰
+# Monétisation 💰
 
-<div class="mt-8 text-lg text-gray-700 space-y-4">
+<div class="mt-8 text-xl text-gray-700 space-y-4">
 
-I strongly encourage everyone here. If you have money to invest, building mobile app in Madagascar is at most a tenth of what it takes for anyone else. If you can test your idea and execute, there's no better place and time than now.
+Le développement d'applications mobiles à Madagascar représente une opportunité exceptionnelle. Le coût de développement est environ dix fois inférieur à celui d'autres pays, offrant ainsi un avantage concurrentiel significatif. C'est le moment idéal pour tester vos idées et les concrétiser.
 
 <div class="notice info mt-8">
   <span class="icon">💳</span>
   <div>
-    You'll need a bank account that the stores can send money to.
+    Un compte bancaire est nécessaire pour recevoir les paiements des stores.
   </div>
 </div>
 
@@ -35,56 +35,56 @@ I strongly encourage everyone here. If you have money to invest, building mobile
 layout: two-cols
 ---
 
-# RevenueCat 🔥
-## In-App Purchase Management
+# <a href="https://www.revenuecat.com/docs/getting-started/quickstart" target="_blanc"><img src="/images/revenuecat.png" class="inline-block w-32 align-middle" /></a> 🔥
+
+## Gestion des Achats In-App
 
 <div class="mt-2 space-y-2">
 
-### Setup Process
-1. Sign In
-2. Create Project
-3. Create Products + Entitlements
-4. Export API keys
-5. Create a paywall
-### Benefits
-- Cross-platform support
-- Analytics dashboard
-- Server-side receipt validation
-- Subscription management
-- A/B testing capabilities
+### Processus d'Installation
+
+1. Se connecter
+2. Créer un projet
+3. Créer des produits + droits
+4. Exporter les clés API
+5. Créer une interface de paiement
+
+### Avantages
+
+- Support multi-plateformes
+- Tableau de bord analytique
+- Validation des reçus côté serveur
+- Gestion des abonnements
+- Capacités de tests A/B
 
 </div>
 
 ::right::
-
-
-
-
 
 <div class="mt-8">
 <img src="/files/image%2026.png" class="rounded-lg shadow-lg" />
 </div>
 
 ---
-layout: two-cols
----
 
 # App Store
-## iOS Monetization
+
+## [Monétisation iOS](https://appstoreconnect.apple.com/business)
 
 <div class="mt-8 space-y-6">
 
-### Setup Steps
-1. Apps > YOUR APP > Subscriptions
-2. Create Subscription Groups
-3. Sign agreements at https://appstoreconnect.apple.com/business
-4. Add bank account
-5. Fill Tax Info
+### Étapes de Configuration
+
+1. Apps > VOTRE APP > Abonnements
+2. Créer des Groupes d'Abonnement
+3. Signer les accords sur https://appstoreconnect.apple.com/business
+4. Ajouter un compte bancaire
+5. Remplir les Informations Fiscales
 
 <div class="notice warning">
   <span class="icon">💸</span>
   <div>
-    <strong>Apple Tax:</strong> 30% of revenue
+    <strong>Commission Apple :</strong> 30% des revenus
   </div>
 </div>
 
@@ -101,24 +101,24 @@ layout: two-cols
 </style>
 
 ---
-layout: two-cols
----
 
 # Google Play
-## Android Monetization
+
+## [Monétisation Android](https://play.google.com/console/u/0/developers/7358940604964515304/paymentssettings)
 
 <div class="mt-8 space-y-6">
 
-### Setup Process
-1. App > Monetize with Play
-2. Products > Subscriptions > Create
-3. Create offer & Set price
-4. Setup bank account
+### Processus de Configuration
+
+1. App > Monétiser avec Play
+2. Produits > Abonnements > Créer
+3. Créer une offre & Définir le prix
+4. Configurer le compte bancaire
 
 <div class="notice success">
   <span class="icon">💰</span>
   <div>
-    <strong>Google Tax:</strong> 15% of revenue
+    <strong>Commission Google :</strong> 15% des revenus
   </div>
 </div>
 
@@ -138,22 +138,25 @@ layout: two-cols
 layout: two-cols
 ---
 
-# Other Options
-## Additional Payment Methods
+# Autres Options
+
+## Méthodes de Paiement Additionnelles
 
 <div class="mt-8 space-y-6">
 
-### Platform Keys
-- Apple store connect
-- Android publisher key
+### Clés des Plateformes
 
-### Stripe Integration
+- Connexion App Store
+- Clé d'éditeur Android
+
+### [Intégration Stripe](https://stripe.com/)
+
 <div class="notice info">
   <span class="icon">💳</span>
   <div>
-    <strong>Fee:</strong> 2.9% + 30¢
+    <strong>Frais :</strong> 2.9% + 0,30€
     <br/>
-    <small>Recommended for NextJS integration</small>
+    <small>Recommandé pour l'intégration NextJS</small>
   </div>
 </div>
 
@@ -163,28 +166,32 @@ layout: two-cols
 
 <div class="mt-8 space-y-6">
 
-### Tax Considerations
+### Considérations Fiscales
+
 <div class="notice success">
   <span class="icon">🎉</span>
   <div>
-    <strong>US Tax:</strong> 0%
+    <strong>Taxe US :</strong> 0%
   </div>
 </div>
 
 ### API Integration
+
 ```typescript
 // Example Stripe integration
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 const session = await stripe.checkout.sessions.create({
-  payment_method_types: ['card'],
-  line_items: [{
-    price: 'price_H5ggYwtDq4fbrJ',
-    quantity: 1,
-  }],
-  mode: 'subscription',
-  success_url: 'https://example.com/success',
-  cancel_url: 'https://example.com/cancel',
+  payment_method_types: ["card"],
+  line_items: [
+    {
+      price: "price_H5ggYwtDq4fbrJ",
+      quantity: 1,
+    },
+  ],
+  mode: "subscription",
+  success_url: "https://example.com/success",
+  cancel_url: "https://example.com/cancel",
 });
 ```
 

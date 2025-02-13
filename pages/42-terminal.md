@@ -2,17 +2,44 @@
 layout: center
 ---
 
-<div class="text-center">
-  <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-green-600 to-blue-500 bg-clip-text text-transparent">
-    Getting Started
+<div class="text-center relative">
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute inset-0 bg-[url('/images/sparkles.png')] opacity-10 animate-pulse"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-500/20 blur-3xl"></div>
+  </div>
+  
+  <h1 class="text-6xl font-bold mb-6 animate-float">
+    <span class="bg-gradient-to-r from-purple-600 via-fuchsia-500 to-pink-500 bg-clip-text text-transparent">
+      ✨ Entrons dans Le Paradis des Développeurs
+    </span>
   </h1>
-  <p class="text-xl text-gray-600">Your First React Native App</p>
+  
+  <p class="text-2xl text-gray-600 flex items-center justify-center gap-3">
+    <span class="animate-bounce">🪄</span>
+    La Vraie Magie de React Native Commence
+    <span class="animate-spin-slow">💫</span>
+  </p>
 </div>
+
+<style>
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
+</style>
 
 ---
 layout: iframe-left
-url: https://docs.expo.dev/more/create-expo/ 
+url: https://docs.expo.dev/more/create-expo/
 ---
+
+<SectionTitle position="right" title="IV - Le Paradis des Développeurs"/>
 
 <div class="terminal-window">
         <div class="terminal-header">
@@ -45,7 +72,7 @@ url: https://docs.expo.dev/more/create-expo/
                     <span class="cursor">_</span>
                 </div>
             </div>
-            <div v-click v-if="$clicks === 4" class="flex flex-col gap-2 pt-2 pl-6 text-neutral-400">
+            <div v-click class="flex flex-col gap-2 pt-2 pl-6 text-neutral-400">
                 <span>with-canary-react-19</span>
                 <span>with-custom-font</span>
                 <span class="text-blue-400"> ❯ with-camera</span>
@@ -75,7 +102,7 @@ url: https://docs.expo.dev/more/create-expo/
                     </span>
                 </div>
             </div>
-            <div v-click="['+1','+1']" class="command-line" v-if="$clicks < 9">
+            <div v-click class="command-line">
                     <span class="text-neutral-300">
                                 npm <span class="text-yellow-500">warn</span> <span class="text-purple-400">deprecated</span> inflight@1.0.6: This module is not supported, and leaks memory.
                                 Do
@@ -108,7 +135,7 @@ url: https://docs.expo.dev/more/create-expo/
 
 <style>
 .terminal-window {
-  @apply bg-gray-900 rounded-lg overflow-scroll h-[60vh];
+  @apply bg-gray-900 rounded-lg overflow-scroll h-[50vh];
 }
 
 .terminal-header {
@@ -162,11 +189,12 @@ url: https://docs.expo.dev/more/create-expo/
 }
 </style>
 
-
 ---
 layout: iframe-left
 url: https://t4stack.com/
 ---
+
+<SectionTitle position="right" title="IV - Le Paradis des Développeurs"/>
 
 <div class="terminal-window">
       <div class="terminal-header">
@@ -284,86 +312,50 @@ To start the API and web development servers, run 'bun api' and 'bun web' in sep
 </style>
 
 ---
-layout: center
----
-
-<div class="text-center">
-  <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-    The Magic Moment
-  </h1>
-  <p class="text-xl text-gray-600">One codebase, everywhere!</p>
-</div>
-
----
 layout: two-cols
 ---
 
+<SectionTitle title="IV - Le Paradis des Développeurs"/>
+
 <div class="flex flex-col gap-6 pr-8">
+<div class="text-center">
+  <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+    Le Moment Magique 🪄
+  </h1>
+  <p class="text-xl text-gray-600">Un code unique, des possibilités infinies</p>
+</div>
   <div class="bg-gray-900 rounded-lg p-6">
     <pre class="text-white font-mono"><span class="text-green-400">$</span> npx expo start</pre>
   </div>
   
   <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-lg p-6 shadow-lg">
-    <h3 class="text-2xl font-bold mb-4 text-indigo-900">Wait... What? 🤯</h3>
+    <h3 class="text-2xl font-bold mb-4 text-indigo-900">Une Révélation 🤯</h3>
     <p class="text-lg text-gray-700 leading-relaxed">
-      "When my brother told me about it, I was skeptical. A WebView again? NO, NO NONONO! It just CAN compile to web while being truly native!"
+      "Au début, j'étais sceptique. Encore une WebView ? Pas du tout ! C'est une vraie application native qui peut aussi être compilée pour le web !"
     </p>
   </div>
 </div>
 
 ::right::
 
-<div class="flex flex-col gap-6 pl-8">
-  <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-6 shadow-lg">
-    <h3 class="text-xl font-semibold text-emerald-900 mb-3">🪄 The Same Code Runs On:</h3>
-    <ul class="space-y-3 text-gray-700">
-      <li class="flex items-center gap-2">
-        <span class="text-2xl">📱</span> iOS Devices
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="text-2xl">🤖</span> Android Devices
-      </li>
-      <li class="flex items-center gap-2">
-        <span class="text-2xl">🌐</span> Web Browsers
-      </li>
-    </ul>
-  </div>
-
-  <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
-    <p class="text-amber-800">
-      <span class="font-semibold">Pro Tip:</span> As long as you don't use mobile-specific APIs, you can develop everything in your browser first!
-    </p>
-  </div>
-</div>
-
----
-layout: center
----
-
-<div class="grid grid-cols-3 gap-8 w-full max-w-4xl mx-auto">
-  <div class="flex flex-col items-center gap-4 p-6 bg-gradient-to-b from-blue-50 to-blue-100 rounded-lg shadow-lg">
-    <div class="text-4xl">📱</div>
-    <h3 class="text-xl font-bold text-blue-900">Mobile Native</h3>
-    <p class="text-center text-gray-700">True native performance with platform-specific APIs</p>
-  </div>
-
-  <div class="flex flex-col items-center gap-4 p-6 bg-gradient-to-b from-green-50 to-green-100 rounded-lg shadow-lg">
-    <div class="text-4xl">🔄</div>
-    <h3 class="text-xl font-bold text-green-900">Hot Reload</h3>
-    <p class="text-center text-gray-700">Instant updates across all platforms</p>
-  </div>
-
-  <div class="flex flex-col items-center gap-4 p-6 bg-gradient-to-b from-purple-50 to-purple-100 rounded-lg shadow-lg">
-    <div class="text-4xl">🎯</div>
-    <h3 class="text-xl font-bold text-purple-900">One Codebase</h3>
-    <p class="text-center text-gray-700">Write once, run everywhere</p>
-  </div>
-</div>
+```mermaid
+  graph TD
+    A[Code React Native] --> B[iOS natif]
+    A --> C[Android natif]
+    A --> D[Application Web]
+    B --> E[Performance native]
+    C --> E
+    D --> F[Développement rapide]
+    E --> G[Expérience utilisateur optimale]
+    F --> G
+```
 
 ---
 layout: image-left
 image: /files/expo-go.png
 ---
+
+<SectionTitle position="right" title="IV - Le Paradis des Développeurs"/>
 
 <div class="flex flex-col gap-6">
   <div class="terminal-window">
@@ -392,17 +384,17 @@ image: /files/expo-go.png
         <span class="command">npx expo start</span>
       </div>
     </div>
-  </div>
-
-  <div class="qr-container bg-white px-6 pb-2 rounded-lg text-center">
-    <div class="text-lg font-semibold mb-4">Scan with Expo Go</div>
+     <div v-click class="qr-container px-6 pb-2 rounded-lg text-center">
+    <div class="text-lg font-semibold mb-4 text-white">Scan with Expo Go</div>
     <div class="qr-code-placeholder w-48 h-48 mx-auto bg-gray-100 flex items-center justify-center">
 <img src="/files/qr-code.png" alt="QR Code" class="w-full h-full object-contain" />
     </div>
-    <div class="mt-4 text-sm text-gray-600">
+    <div class="mt-4 text-sm text-gray-300">
       exp://192.168.1.5:8081
     </div>
   </div>
+  </div>
+
 </div>
 
 <style>
@@ -459,62 +451,44 @@ image: /files/expo-go.png
 layout: two-cols
 ---
 
+<SectionTitle title="IV - Le Paradis des Développeurs"/>
+
 <div class="flex flex-col gap-6 pr-8">
   <div class="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-lg p-8 shadow-xl">
     <h2 class="text-3xl font-bold mb-4">CNG 🔥</h2>
-    <p class="text-xl mb-2">Continuous Native Generation</p>
-    <p class="text-lg opacity-90">When you need mobile-only features, things are getting serious!</p>
+    <p class="text-xl mb-2">Génération Native Continue</p>
+    <p class="text-lg opacity-90">Quand vous avez besoin des fonctionnalités mobiles spécifiques, les choses deviennent sérieuses !</p>
   </div>
-
-  <div class="bg-gray-50 rounded-lg p-5 shadow-lg">
-    <h3 class="text-lg font-semibold mb-3 text-gray-800">Development Requirements & Setup</h3>
-    <div class="gap-4">
-      <div>
-        <h4 class="text-sm font-medium mb-2">Wireless Setup</h4>
-        <ul class="space-y-2">
-          <li class="flex items-center gap-2">
-            <span class="text-base">📱</span>
-            <div>
-              <p class="text-sm font-medium">iOS - XCode wireless</p>
-            </div>
-          </li>
-          <li class="flex items-center gap-2">
-            <span class="text-base">🤖</span>
-            <div>
-              <span class="text-sm font-medium">Android - Wireless debug</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+   <div class="bg-gray-900 rounded-lg p-6">
+    <pre class="text-white font-mono"><span class="text-green-400">$</span> npx expo run:android</pre>
+    <pre class="text-white font-mono"><span class="text-green-400">$</span> npx expo run:ios</pre>
   </div>
 </div>
+
 ::right::
 
 <div class="flex flex-col gap-2 pl-8">
   <div class="bg-gray-50 rounded-lg p-5 shadow-lg">
-        <h4 class="text-sm font-medium mb-2">Required Tools</h4>
+        <h3 class="text-lg font-semibold mb-3 text-gray-800">Prérequis & Configuration</h3>
+        <h4 class="text-sm font-medium mb-2">Outils Nécessaires</h4>
         <ul class="space-y-2">
           <li class="flex items-center gap-2">
             <div class="w-6 h-6 flex items-center justify-center bg-blue-100 rounded-lg">
               <img src="/images/xcode.svg" alt="XCode" class="w-full h-auto"/>
             </div>
-            <span class="text-sm">XCode</span>
+            <span class="text-sm">XCode - iOS - XCode sans fi</span>
           </li>
           <li class="flex items-center gap-2">
             <div class="w-6 h-6 flex items-center justify-center bg-green-100 rounded-lg">
             <img src="/images/android-studio.svg" />
             </div>
-            <span class="text-sm">Android Studio</span>
+            <span class="text-sm">Android Studio - Android - Débogage sans fil</span>
           </li>
         </ul>
       </div>
   <div class="rounded-lg overflow-hidden shadow-lg">
-    <img src="/files/image 16.png" alt="Wireless Debugging Setup" class="w-full h-auto"/>
+    <img src="/files/image 16.png" alt="Configuration du Débogage Sans Fil" class="w-full h-auto"/>
   </div>
-
- 
-
 </div>
 
 <style>
